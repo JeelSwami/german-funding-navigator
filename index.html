@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>German Funding Navigator · Walter Benjamin, Emmy Noether, ERC Starting Grant</title>
+<meta name="description" content="An interactive guide for international researchers: check your eligibility for the DFG Walter Benjamin Programme, the DFG Emmy Noether Programme, and the ERC Starting Grant, with timelines, checklists, and every fact traced to its official source.">
+<meta property="og:title" content="German Funding Navigator">
+<meta property="og:description" content="Three funding routes into German research, mapped for international researchers. Eligibility navigator, timelines, checklists, and sources.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%231baf7a'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='Georgia'%3EN%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#navigator">Skip to the eligibility navigator</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="#top">German Funding Navigator<span class="dot">.</span></a>
+    <nav class="site-nav" aria-label="Sections">
+      <a href="#navigator">Navigator</a>
+      <a href="#walter-benjamin">Programmes</a>
+      <a href="#compare">Compare</a>
+      <a href="#timelines">Timelines</a>
+      <a href="#checklists">Checklists</a>
+      <a href="#faq">FAQ</a>
+      <a href="#moving">Moving</a>
+      <a href="#sources">Sources</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+    <button class="theme-btn" id="themeBtn" aria-label="Switch color theme">Theme</button>
+  </div>
+</header>
+
+<main id="top">
+
+<div class="wrap hero">
+  <p class="kicker">A guide for international researchers · rules verified 9 August 2026</p>
+  <h1>Three funding routes into German research, mapped.</h1>
+  <p class="lede">Germany funds early career research generously, but the rules are scattered across guideline PDFs, FAQ pages, and portal footnotes. This site pulls them into one place for the three programmes that matter most when you want to run your own project here: the DFG Walter Benjamin Programme, the DFG Emmy Noether Programme, and the ERC Starting Grant. Every fact links back to the official source it came from.</p>
+  <div class="chip-row">
+    <a class="chip" href="#walter-benjamin"><span class="swatch wb"></span>Walter Benjamin · your own postdoc project</a>
+    <a class="chip" href="#emmy-noether"><span class="swatch en"></span>Emmy Noether · your own research group</a>
+    <a class="chip" href="#erc"><span class="swatch erc"></span>ERC Starting Grant · five years, up to €1.5M+</a>
+  </div>
+  <div class="notice urgent" role="note">
+    <div><strong>Time sensitive:</strong> the ERC Starting Grant 2027 call is open now with a widened eligibility window of 0 to 10 years after your PhD defense, instead of the usual 2 to 7. The deadline is <strong>14 October 2026</strong> (<span id="ercCountdown"></span>). If your defense was ever "too long ago" for the ERC, this is the year to look again. <a href="https://erc.europa.eu/news-events/news/changes-2026-and-2027-work-programmes" target="_blank" rel="noopener">Official announcement</a></div>
+  </div>
+</div>
+
+<hr class="rule">
+
+<!-- ============ NAVIGATOR ============ -->
+<section id="navigator">
+  <div class="wrap">
+    <p class="sec-label">01 · Eligibility navigator</p>
+    <h2>Which programmes are open to you right now?</h2>
+    <p class="sec-intro">Answer a few questions about your PhD, your experience, and your plans. You get an honest reading of where you stand with each programme, based on the current official rules, with the exact rule quoted for anything that affects you. Nothing you enter leaves your browser.</p>
+
+    <div class="wizard" id="wizard" aria-live="polite">
+      <div class="wiz-progress" id="wizProgress" aria-hidden="true"></div>
+      <div id="wizBody"><!-- steps rendered by script --></div>
+      <div class="wiz-nav">
+        <button class="btn ghost" id="wizBack" type="button">Back</button>
+        <button class="btn primary" id="wizNext" type="button">Continue</button>
+      </div>
+    </div>
+
+    <div class="verdicts wrap-inner" id="verdicts" hidden></div>
+  </div>
+</section>
+
+<hr class="rule">
+<!-- ============ DEEP DIVES ============ -->
+<section id="walter-benjamin">
+  <div class="wrap">
+    <p class="sec-label">02 · The programmes in depth</p>
+
+    <div class="card prog-card wb">
+      <h2>DFG Walter Benjamin Programme</h2>
+      <p class="prog-sub">Your own postdoc project at a place you choose. Two years to show you can define and deliver research independently.</p>
+
+      <div class="tile-row">
+        <div class="tile"><div class="t-label">Duration</div><div class="t-value">2 years</div><div class="t-note">+1 only in exceptional cases, 36 months absolute cap</div></div>
+        <div class="tile"><div class="t-label">Deadline</div><div class="t-value">None</div><div class="t-note">apply any time via elan</div></div>
+        <div class="tile"><div class="t-label">Decision</div><div class="t-value">~6 months</div><div class="t-note">DFG's stated current average</div></div>
+        <div class="tile"><div class="t-label">Career stage</div><div class="t-value">Early postdoc</div><div class="t-note">no fixed year cutoff</div></div>
+        <div class="tile"><div class="t-label">Start</div><div class="t-value">Within 1 year</div><div class="t-note">of approval</div></div>
+      </div>
+
+      <h3>One programme, two very different variants</h3>
+      <p>The <strong>Walter Benjamin Position</strong> funds a salaried postdoc job in Germany. The DFG pays your host institution, the host employs you, and you get a normal German employment contract with pension, health, and unemployment insurance included. The 2026 funding rate for a postdoc position is €88,200 per year in gross employer costs, oriented on pay scale TV-L E13 to E14. <a class="src" href="https://www.dfg.de/resource/blob/368646/60-12-2026-en.pdf" target="_blank" rel="noopener">DFG 60.12</a> <a class="src" href="https://www.dfg.de/resource/blob/168198/52-18-en.pdf" target="_blank" rel="noopener">DFG 52.18</a></p>
+      <p>The <strong>Walter Benjamin Fellowship</strong> funds the same idea abroad, but as a personal stipend paid directly to you: a basic amount of €2,188 per month in the DFG's current award calculator, plus a country dependent foreign allowance, cost of living compensation, and child allowances. A stipend is not employment. No employer pays into your pension or unemployment insurance, and you arrange health insurance yourself. <a class="src" href="https://www.dfg.de/resource/blob/168202/52-19-en.pdf" target="_blank" rel="noopener">DFG 52.19</a> <a class="src" href="https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/research-fellowships/calculator" target="_blank" rel="noopener">DFG calculator</a></p>
+      <p>Both variants add a flat €313 per month for direct project costs, travel, and publications, and up to €5,000 per year for book format publications. Everything else, from lab space to consumables beyond the flat rate, comes from your host. You can also combine phases, for example a year abroad on the fellowship followed by a year in Germany on the position, planned month by month at proposal time. <a class="src" href="https://www.dfg.de/resource/blob/168116/50-10-en.pdf" target="_blank" rel="noopener">DFG 50.10</a></p>
+
+      <h3>The rule international researchers most often misread</h3>
+      <p>The direction of travel decides everything. The <strong>Position in Germany is open to researchers anywhere in the world, of any nationality, with no prior connection to Germany</strong>. If you did your PhD in India, the US, or anywhere else and want to bring your project to a German lab, this is your entry point. <a class="src" href="https://www.dfg.de/resource/blob/168116/50-10-en.pdf" target="_blank" rel="noopener">DFG 50.10 §3.1</a></p>
+      <p>The <strong>Fellowship abroad works the other way</strong>: it sends people who are already part of the German research system out into the world. You qualify only if you completed most of your schooling and university education in Germany, or if you have worked in Germany as a researcher continuously for the last three years. It is a common and painful surprise, so check this rule first if you were hoping to be funded outside Germany. <a class="src" href="https://www.dfg.de/en/research-funding/proposal-funding-process/faq/walter-benjamin" target="_blank" rel="noopener">DFG FAQ</a></p>
+
+      <h3>Are you in the window?</h3>
+      <ul>
+        <li>You need a completed doctorate, but you can already apply once your thesis is submitted to the examinations office. Include the thesis, proof of submission, and a short statement from your supervisor. Money only flows after you pass all exams. <a class="src" href="https://www.dfg.de/resource/blob/168116/50-10-en.pdf" target="_blank" rel="noopener">DFG 50.10</a></li>
+        <li>There is no fixed "years since PhD" limit. The DFG asks whether you are still in the early postdoctoral phase, read per discipline, and counts parental leave in your favour. You stop being eligible once you have already run your own projects, managed staff, or led a group. <a class="src" href="https://www.dfg.de/en/research-funding/proposal-funding-process/faq/walter-benjamin" target="_blank" rel="noopener">DFG FAQ</a></li>
+        <li>Mobility is a core expectation: the point is a new academic environment. Staying at your current institution needs a specific justification, such as family care or facilities that exist nowhere else, plus a genuinely new research direction. <a class="src" href="https://www.dfg.de/resource/blob/168116/50-10-en.pdf" target="_blank" rel="noopener">DFG 50.10</a></li>
+        <li>Hosts must be research institutions that allow you to publish; in Germany they are normally non profit. If your German host is a Max Planck, Fraunhofer, or Helmholtz institute, it has to co finance 45 percent of the position itself, so raise this with them early. <a class="src" href="https://www.dfg.de/resource/blob/168116/50-10-en.pdf" target="_blank" rel="noopener">DFG 50.10</a></li>
+      </ul>
+
+      <h3>What reviewers are told to look for</h3>
+      <p>Reviewers assess three things: you (qualifications, potential, career trajectory), the project (originality and international level), and the fit of your chosen host for this particular project and this stage of your career. Recommendation letters are not allowed; the proposal has to carry the argument on its own. <a class="src" href="https://www.dfg.de/resource/blob/167470/10-219-en.pdf" target="_blank" rel="noopener">DFG 10.219</a></p>
+
+      <h3>After the fellowship: the return grant</h3>
+      <p>If you spend at least 12 months abroad on the fellowship, you can apply for a return grant of up to six months to come back and reconnect with the German research system, by a simple letter to the DFG staff who handled your award. <a class="src" href="https://www.dfg.de/resource/blob/168202/52-19-en.pdf" target="_blank" rel="noopener">DFG 52.19</a></p>
+
+      <div class="linkbox">
+        <strong>Official sources for this section</strong>
+        <a href="https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/walter-benjamin" target="_blank" rel="noopener">Programme page</a>
+        <a href="https://www.dfg.de/en/research-funding/proposal-funding-process/faq/walter-benjamin" target="_blank" rel="noopener">Official FAQ</a>
+        <a href="https://www.dfg.de/resource/blob/168116/50-10-en.pdf" target="_blank" rel="noopener">Guidelines (form 50.10, 06/2026)</a>
+        <a href="https://elan.dfg.de/" target="_blank" rel="noopener">elan portal</a>
+      </div>
+    </div>
+
+    <div class="card prog-card en" id="emmy-noether">
+      <h2>DFG Emmy Noether Programme</h2>
+      <p class="prog-sub">Six years to build and lead your own junior research group, and qualify for a professorship without a habilitation.</p>
+
+      <div class="tile-row">
+        <div class="tile"><div class="t-label">Duration</div><div class="t-value">6 years</div><div class="t-note">two phases of 36 months, evaluation after year 3</div></div>
+        <div class="tile"><div class="t-label">Budget</div><div class="t-value">No upper limit</div><div class="t-note">leader ~€102,300/yr + team + running costs</div></div>
+        <div class="tile"><div class="t-label">Deadline</div><div class="t-value">None</div><div class="t-note">apply any time via elan</div></div>
+        <div class="tile"><div class="t-label">Decision</div><div class="t-value">~8 months</div><div class="t-note">DFG's stated current average</div></div>
+        <div class="tile"><div class="t-label">Success rate</div><div class="t-value">~20%</div><div class="t-note">across all fields, per DFG FAQ</div></div>
+      </div>
+
+      <h3>What you actually get</h3>
+      <p>An Emmy Noether award makes you a group leader with your own budget line: your own position (the 2026 DFG rate is €102,300 per year, oriented between pay scales E14 and E15), plus the doctoral researchers, postdocs, equipment, and running costs your project needs. The DFG sets no upper funding limit; you request what the science justifies. <a class="src" href="https://www.dfg.de/resource/blob/368646/60-12-2026-en.pdf" target="_blank" rel="noopener">DFG 60.12</a> <a class="src" href="https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/emmy-noether/faq" target="_blank" rel="noopener">DFG FAQ</a></p>
+      <p>Just as important is the legal standing. The DFG asks your host university to sign a model contract giving you the effective rights of a junior professor: you supervise doctoral researchers, you teach two hours a week per semester, and you answer for your own research. After year three an evaluation checks your progress and whether the university actually honoured those rights; pass it and the second three years are released. <a class="src" href="https://www.dfg.de/resource/blob/168076/50-02-en.pdf" target="_blank" rel="noopener">DFG 50.02</a> <a class="src" href="https://www.dfg.de/resource/blob/167484/10-223-en.pdf" target="_blank" rel="noopener">DFG 10.223</a></p>
+
+      <h3>Are you in the window?</h3>
+      <ul>
+        <li><strong>Submit within four years of your doctorate.</strong> Licensed physicians and psychologists get six. The clock runs from your certificate date if it was issued within a year of your defense, otherwise from the defense itself. <a class="src" href="https://www.dfg.de/resource/blob/168076/50-02-en.pdf" target="_blank" rel="noopener">DFG 50.02</a> <a class="src" href="https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/emmy-noether/faq" target="_blank" rel="noopener">DFG FAQ</a></li>
+        <li><strong>Children extend the window:</strong> two years per child for women, one year per child for men (two with documented care beyond a year), capped at six extra years in total, for children under 12 living in your household. <a class="src" href="https://www.dfg.de/resource/blob/168076/50-02-en.pdf" target="_blank" rel="noopener">DFG 50.02</a></li>
+        <li><strong>You need roughly two years of postdoc experience first</strong>, in the DFG's words "as a rule". So the realistic application zone is years two to four after your PhD. <a class="src" href="https://www.dfg.de/resource/blob/168076/50-02-en.pdf" target="_blank" rel="noopener">DFG 50.02</a></li>
+        <li><strong>Substantial international research experience is required.</strong> Time abroad is the obvious evidence, but international collaborations or an international working environment during your PhD or postdoc in Germany also count. You describe it in a separate appendix. <a class="src" href="https://www.dfg.de/resource/blob/168076/50-02-en.pdf" target="_blank" rel="noopener">DFG 50.02</a></li>
+        <li>You are excluded if you already meet the requirements for a professorship appointment, or if you already lead a comparable independent junior research group. <a class="src" href="https://www.dfg.de/resource/blob/168076/50-02-en.pdf" target="_blank" rel="noopener">DFG 50.02</a></li>
+        <li>Your group should not sit at the university that awarded your PhD; if it does, the proposal must justify why. <a class="src" href="https://www.dfg.de/resource/blob/168076/50-02-en.pdf" target="_blank" rel="noopener">DFG 50.02</a></li>
+      </ul>
+
+      <h3>Applying from outside Germany</h3>
+      <p>This programme was explicitly designed to pull outstanding researchers from abroad into the German system, and it checks career stage, not citizenship. The group itself must be based in Germany. If you are not yet part of the German research system, you add one document: a written confirmation that you intend to continue your research career in Germany after the funding ends. You can name several candidate host universities in one proposal and pick the final one within two months of the award. <a class="src" href="https://www.dfg.de/resource/blob/168076/50-02-en.pdf" target="_blank" rel="noopener">DFG 50.02</a></p>
+
+      <h3>Two traps to know before you sign</h3>
+      <ul>
+        <li>If you accept a professorship in Germany during the grant, your project money continues but your own salary line ends. If you leave the German research system entirely, the whole grant ends. Plan your exit routes accordingly. <a class="src" href="https://www.dfg.de/resource/blob/168076/50-02-en.pdf" target="_blank" rel="noopener">DFG 50.02</a></li>
+        <li>Funding has to start being used within six months of approval, so do not apply before you can realistically move. <a class="src" href="https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/emmy-noether/faq" target="_blank" rel="noopener">DFG FAQ</a></li>
+      </ul>
+
+      <div class="linkbox">
+        <strong>Official sources for this section</strong>
+        <a href="https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/emmy-noether" target="_blank" rel="noopener">Programme page</a>
+        <a href="https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/emmy-noether/faq" target="_blank" rel="noopener">Official FAQ</a>
+        <a href="https://www.dfg.de/resource/blob/168076/50-02-en.pdf" target="_blank" rel="noopener">Guidelines (form 50.02, 03/2025)</a>
+        <a href="https://elan.dfg.de/" target="_blank" rel="noopener">elan portal</a>
+      </div>
+    </div>
+
+    <div class="card prog-card erc" id="erc">
+      <h2>ERC Starting Grant</h2>
+      <p class="prog-sub">Europe's flagship early career grant: five years, €1.5 million core budget, and full scientific independence at a host you choose, in Germany or anywhere in the EU and associated countries.</p>
+
+      <div class="tile-row">
+        <div class="tile"><div class="t-label">Duration</div><div class="t-value">Up to 5 years</div><div class="t-note">actual cost funding, not lump sum</div></div>
+        <div class="tile"><div class="t-label">Budget</div><div class="t-value">€1.5M core</div><div class="t-note">+ up to €1M extra; up to €2M extra if relocating to Europe</div></div>
+        <div class="tile"><div class="t-label">Deadline</div><div class="t-value">14 Oct 2026</div><div class="t-note">2027 call, opened 22 July 2026</div></div>
+        <div class="tile"><div class="t-label">Window</div><div class="t-value">0 to 10 years</div><div class="t-note">after PhD defense, this call only (usually 2 to 7)</div></div>
+        <div class="tile"><div class="t-label">Success rate</div><div class="t-value">12.2%</div><div class="t-note">2025 call: 478 funded of 3,928</div></div>
+      </div>
+
+      <h3>The 2027 call is unusual, in your favour</h3>
+      <p>Normally you can apply between 2 and 7 years after your PhD defense. For the 2027 call the ERC widened this to <strong>more than 0 and at most 10 years before 1 January 2027</strong>, meaning a defense between 1 January 2017 and 31 December 2026 qualifies. Researchers who thought they had aged out of the Starting Grant get one more shot this year. A career cap arrives with it: from 2027 you can hold at most one Starting and one Consolidator Grant in a lifetime. <a class="src" href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2027/wp_horizon-erc-2027_en.pdf" target="_blank" rel="noopener">WP 2027</a> <a class="src" href="https://erc.europa.eu/news-events/news/changes-2026-and-2027-work-programmes" target="_blank" rel="noopener">ERC news</a></p>
+      <p>The clock runs from the <strong>date of your successful defense</strong>, not your certificate, and your first doctorate counts if you have more than one. The window stretches for documented life events: a flat 18 months per child for maternity, the leave actually taken for paternity, plus documented long term illness, national service, and clinical training up to four years. The extensions add up with no overall cap. <a class="src" href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/information-for-applicants_he-erc-stg-cog_en.pdf" target="_blank" rel="noopener">Info for Applicants</a></p>
+
+      <h3>Anyone, from anywhere</h3>
+      <p>Nationality and current residence do not matter; researchers of any age from anywhere in the world can apply, and a PhD from any country counts. What matters is where the work happens: your host must be in an EU member state or a country associated to Horizon Europe, you must spend at least half your total working time in Europe, and at least half your working time on the project. The UK and Switzerland are both fully associated again, so hosts there qualify too. <a class="src" href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2027/wp_horizon-erc-2027_en.pdf" target="_blank" rel="noopener">WP 2027</a> <a class="src" href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/list-3rd-country-participation_horizon-euratom_en.pdf" target="_blank" rel="noopener">EU country list</a></p>
+      <p>If you are based outside the EU and associated countries at the deadline and would relocate to take up the grant, you can request up to <strong>€2 million on top</strong> of the core budget instead of the usual €1 million, bringing the theoretical maximum to €3.5 million. The ERC keeps a dedicated page for researchers moving in from third countries. <a class="src" href="https://erc.europa.eu/apply-grant/non-european-researchers" target="_blank" rel="noopener">ERC for non-European researchers</a></p>
+      <p>Germany is the strongest host country by volume: 99 of the 478 Starting Grants in the 2025 round went to researchers at German institutions, about one in five. <a class="src" href="https://erc.europa.eu/system/files/2025-09/erc-2025-stg-statistics.pdf" target="_blank" rel="noopener">ERC statistics 2025</a></p>
+
+      <h3>How the competition works</h3>
+      <ul>
+        <li><strong>One deadline per year.</strong> You submit the full proposal at once: Part B1 with a five page scientific case plus a four page CV and track record, and Part B2 with the seven page detailed proposal. <a class="src" href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/information-for-applicants_he-erc-stg-cog_en.pdf" target="_blank" rel="noopener">Info for Applicants</a></li>
+        <li><strong>Step 1:</strong> one of 28 field panels reads only B1. Top scored proposals ("A invited") move on. <strong>Step 2:</strong> the panel reads everything and interviews you, roughly 30 minutes, remotely. For the 2027 call, Step 1 results are expected 11 May 2027, interviews in June, final results 24 August 2027, and grant signature around December 2027. <a class="src" href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/information-for-applicants_he-erc-stg-cog_en.pdf" target="_blank" rel="noopener">Info for Applicants</a></li>
+        <li><strong>A binding host support letter is mandatory at submission.</strong> It guarantees your independence: your own budget authority, your own team, publishing as senior author, and space. Universities need internal lead time, so contact the research office one to two months before the deadline at the latest. <a class="src" href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2027/wp_horizon-erc-2027_en.pdf" target="_blank" rel="noopener">WP 2027</a></li>
+        <li><strong>Rejection has consequences:</strong> a C in Step 1 in the 2025 or 2026 calls, or a B in Step 1 in the 2026 calls, blocks you from all 2027 main calls. A B in Step 2 carries no ban. Budget for the possibility of one resubmission when you plan your timing. <a class="src" href="https://erc.europa.eu/news-events/news/erc-scientific-council-readjusts-rules-reapplication" target="_blank" rel="noopener">ERC news</a></li>
+        <li>The grant is portable: if you move to another eligible institution, the grant can move with you. Some universities court ERC winners with tenure track offers for exactly this reason. <a class="src" href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2027/wp_horizon-erc-2027_en.pdf" target="_blank" rel="noopener">WP 2027</a></li>
+      </ul>
+
+      <div class="linkbox">
+        <strong>Official sources for this section</strong>
+        <a href="https://erc.europa.eu/apply-grant/starting-grant" target="_blank" rel="noopener">Starting Grant page</a>
+        <a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2027/wp_horizon-erc-2027_en.pdf" target="_blank" rel="noopener">Work Programme 2027</a>
+        <a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/information-for-applicants_he-erc-stg-cog_en.pdf" target="_blank" rel="noopener">Information for Applicants</a>
+        <a href="https://erc.europa.eu/apply-grant/non-european-researchers" target="_blank" rel="noopener">Non-European researchers</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<hr class="rule">
+<!-- ============ COMPARE ============ -->
+<section id="compare">
+  <div class="wrap">
+    <p class="sec-label">03 · Side by side</p>
+    <h2>The three programmes at a glance</h2>
+    <p class="sec-intro">Same table, no marketing. Where a number depends on a date or a call year, the note underneath says so.</p>
+    <div class="table-scroll" role="region" aria-label="Programme comparison table" tabindex="0">
+      <table class="compare">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col" class="wb">Walter Benjamin</th>
+            <th scope="col" class="en">Emmy Noether</th>
+            <th scope="col" class="erc">ERC Starting Grant</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">In one sentence</th>
+            <td>Your own two year postdoc project, in Germany (position) or abroad (fellowship)</td>
+            <td>Your own junior research group in Germany for six years, on the road to a professorship</td>
+            <td>Five years of frontier research with your own team at any EU or associated country host</td>
+          </tr>
+          <tr>
+            <th scope="row">Career window</th>
+            <td>Early postdoc phase, no fixed cutoff<small>can apply once the thesis is submitted</small></td>
+            <td>Within 4 years of the doctorate<small>6 for licensed physicians and psychologists, plus child extensions</small></td>
+            <td>0 to 10 years after the defense (2027 call)<small>usually 2 to 7; extensions for children, illness, clinical training</small></td>
+          </tr>
+          <tr>
+            <th scope="row">Open to researchers abroad?</th>
+            <td>Position: yes, no German connection needed<small>fellowship abroad: only with German integration</small></td>
+            <td>Yes, explicitly invited<small>plus a statement of intent to stay in Germany</small></td>
+            <td>Yes, any nationality, resident anywhere<small>extra money if relocating from outside Europe</small></td>
+          </tr>
+          <tr>
+            <th scope="row">Money</th>
+            <td>Position: €88,200/yr rate · Fellowship: €2,188/mo base + allowances<small>+ €313/mo project costs, 2026 rates</small></td>
+            <td>No upper limit<small>leader position €102,300/yr rate + team + running costs</small></td>
+            <td>Up to €1.5M + up to €1M additional<small>up to €2M additional when relocating to Europe</small></td>
+          </tr>
+          <tr>
+            <th scope="row">Duration</th>
+            <td>2 years<small>+1 exceptional, 36 month cap</small></td>
+            <td>6 years<small>36 + 36 months, evaluation after year 3</small></td>
+            <td>Up to 5 years</td>
+          </tr>
+          <tr>
+            <th scope="row">You are employed as</th>
+            <td>Employee of the German host (position) or stipend holder (fellowship)</td>
+            <td>Employee of the German host, group leader standing</td>
+            <td>Employee of the host institution, terms negotiated with it</td>
+          </tr>
+          <tr>
+            <th scope="row">Deadline</th>
+            <td>None, rolling</td>
+            <td>None, rolling</td>
+            <td>Once a year<small>2027 call: 14 October 2026</small></td>
+          </tr>
+          <tr>
+            <th scope="row">Time to decision</th>
+            <td>~6 months</td>
+            <td>~8 months</td>
+            <td>~10 months to result<small>~14 months to grant signature</small></td>
+          </tr>
+          <tr>
+            <th scope="row">Success rate</th>
+            <td>Not published by the DFG</td>
+            <td>~20%<small>DFG FAQ, all fields</small></td>
+            <td>12.2%<small>2025 call</small></td>
+          </tr>
+          <tr>
+            <th scope="row">What it can lead to</th>
+            <td>Independence record for Emmy Noether, ERC, or a faculty track</td>
+            <td>Professorship eligibility without habilitation</td>
+            <td>Strong tenure leverage; the grant moves with you</td>
+          </tr>
+          <tr>
+            <th scope="row">Proposal language</th>
+            <td>German or English</td>
+            <td>German or English</td>
+            <td>English in practice</td>
+          </tr>
+          <tr>
+            <th scope="row">What the host must sign</th>
+            <td>Employer statement + career support statement (position) or informal acceptance letter (fellowship)</td>
+            <td>Employer statement, ideally the DFG model contract with junior professor rights</td>
+            <td>Binding support letter guaranteeing your independence, due at submission</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="fine" style="margin-top:12px">Sources: DFG forms 50.10, 50.02, 60.12 and programme FAQs; ERC Work Programme 2027 and Information for Applicants. Full list in <a href="#sources">Sources</a>.</p>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ============ TIMELINES ============ -->
+<section id="timelines">
+  <div class="wrap">
+    <p class="sec-label">04 · The two clocks that decide everything</p>
+    <h2>Your eligibility window, and how long the wait really is</h2>
+    <p class="sec-intro">Grant eligibility is measured in "academic age": years since your PhD. Beware that the funders use different clocks. The ERC counts from your defense; the DFG counts from your certificate if it arrived within a year of the defense, otherwise from the defense itself.</p>
+
+    <div class="chart" role="img" aria-label="Chart of eligibility windows in years since PhD. Walter Benjamin covers the early postdoc phase with no fixed cutoff. Emmy Noether covers up to four years after the PhD, typically applied for in years two to four, extendable to six for clinicians and parents. The ERC Starting Grant 2027 call covers zero to ten years; the usual rule is two to seven.">
+      <h3>Who can apply, by years since PhD</h3>
+      <p class="axis-note">Years since doctorate · extensions for children and documented career breaks can push every window further right</p>
+
+      <div class="track">
+        <span class="t-name" style="color:var(--wb-deep)">Walter Benjamin</span>
+        <div class="grid" aria-hidden="true"><i style="left:0%"></i><i style="left:9.09%"></i><i style="left:18.18%"></i><i style="left:27.27%"></i><i style="left:36.36%"></i><i style="left:45.45%"></i><i style="left:54.55%"></i><i style="left:63.64%"></i><i style="left:72.73%"></i><i style="left:81.82%"></i><i style="left:90.91%"></i></div>
+        <div class="bar wb" style="left:0%;width:18.18%">early phase</div>
+        <div class="bar wb faded" style="left:18.18%;width:18.18%">no fixed cutoff</div>
+        <span class="bar-label-out" style="left:0%">from thesis submission · "early postdoc phase", read per discipline</span>
+      </div>
+
+      <div class="track">
+        <span class="t-name" style="color:var(--en-deep)">Emmy Noether</span>
+        <div class="grid" aria-hidden="true"><i style="left:0%"></i><i style="left:9.09%"></i><i style="left:18.18%"></i><i style="left:27.27%"></i><i style="left:36.36%"></i><i style="left:45.45%"></i><i style="left:54.55%"></i><i style="left:63.64%"></i><i style="left:72.73%"></i><i style="left:81.82%"></i><i style="left:90.91%"></i></div>
+        <div class="bar en faded" style="left:0%;width:18.18%">build ~2 yrs postdoc</div>
+        <div class="bar en" style="left:18.18%;width:18.18%">apply here</div>
+        <div class="bar en hatch" style="left:36.36%;width:18.18%">clinicians / parents</div>
+        <span class="bar-label-out" style="left:0%">submit within 4 years of the doctorate · 6 for licensed medicine and psychology</span>
+      </div>
+
+      <div class="track" style="margin-bottom:34px">
+        <span class="t-name" style="color:var(--erc-deep)">ERC Starting Grant</span>
+        <div class="grid" aria-hidden="true"><i style="left:0%"></i><i style="left:9.09%"></i><i style="left:18.18%"></i><i style="left:27.27%"></i><i style="left:36.36%"></i><i style="left:45.45%"></i><i style="left:54.55%"></i><i style="left:63.64%"></i><i style="left:72.73%"></i><i style="left:81.82%"></i><i style="left:90.91%"></i></div>
+        <div class="bar erc" style="left:0%;width:90.91%">2027 call: 0 to 10 years</div>
+        <div class="bar erc hatch" style="left:18.18%;width:45.45%;top:34px;height:14px;line-height:14px;font-size:0.68rem">usual rule: 2 to 7</div>
+        <span class="bar-label-out" style="left:0%;top:52px">counted from the successful defense of your first PhD</span>
+      </div>
+
+      <div class="axis-labels" aria-hidden="true" style="margin-top:14px">
+        <span style="left:0%">0</span><span style="left:9.09%">1</span><span style="left:18.18%">2</span><span style="left:27.27%">3</span><span style="left:36.36%">4</span><span style="left:45.45%">5</span><span style="left:54.55%">6</span><span style="left:63.64%">7</span><span style="left:72.73%">8</span><span style="left:81.82%">9</span><span style="left:90.91%">10</span>
+      </div>
+    </div>
+
+    <div class="chart" role="img" aria-label="Chart of time from submission to funded start. Walter Benjamin: review about six months, then start within twelve months. Emmy Noether: review about eight months, then start within six months. ERC: submission October 2026, step one results May 2027, final results August 2027, grant signature around December 2027.">
+      <h3>From submission to funded start, in months</h3>
+      <p class="axis-note">What "apply now" actually means for your calendar · DFG averages from official FAQs, ERC dates from the 2027 call documents</p>
+
+      <div class="track">
+        <span class="t-name" style="color:var(--wb-deep)">Walter Benjamin</span>
+        <div class="grid" aria-hidden="true"><i style="left:0%"></i><i style="left:16.67%"></i><i style="left:33.33%"></i><i style="left:50%"></i><i style="left:66.67%"></i><i style="left:83.33%"></i><i style="left:100%"></i></div>
+        <div class="bar wb" style="left:0%;width:33.33%">review ~6 mo</div>
+        <div class="bar wb faded" style="left:33.33%;width:66.67%">start when ready, within 12 months</div>
+      </div>
+
+      <div class="track">
+        <span class="t-name" style="color:var(--en-deep)">Emmy Noether</span>
+        <div class="grid" aria-hidden="true"><i style="left:0%"></i><i style="left:16.67%"></i><i style="left:33.33%"></i><i style="left:50%"></i><i style="left:66.67%"></i><i style="left:83.33%"></i><i style="left:100%"></i></div>
+        <div class="bar en" style="left:0%;width:44.44%">review ~8 mo</div>
+        <div class="bar en faded" style="left:44.44%;width:33.33%">start within 6 months</div>
+      </div>
+
+      <div class="track" style="margin-bottom:30px">
+        <span class="t-name" style="color:var(--erc-deep)">ERC Starting Grant 2027</span>
+        <div class="grid" aria-hidden="true"><i style="left:0%"></i><i style="left:16.67%"></i><i style="left:33.33%"></i><i style="left:50%"></i><i style="left:66.67%"></i><i style="left:83.33%"></i><i style="left:100%"></i></div>
+        <div class="bar erc" style="left:0%;width:38.89%">Step 1 review</div>
+        <div class="bar erc hatch" style="left:38.89%;width:18.33%">interview + Step 2</div>
+        <div class="bar erc faded" style="left:57.22%;width:22.22%">to signature</div>
+        <span class="bar-label-out" style="left:0%">submit 14 Oct 2026 · Step 1 letters 11 May · final 24 Aug · signature ~Dec 2027</span>
+      </div>
+
+      <div class="axis-labels" aria-hidden="true" style="margin-top:10px">
+        <span style="left:0%">0</span><span style="left:16.67%">3</span><span style="left:33.33%">6</span><span style="left:50%">9</span><span style="left:66.67%">12</span><span style="left:83.33%">15</span><span style="left:100%">18</span>
+      </div>
+    </div>
+
+    <div class="notice" style="margin-top:18px">
+      <div><strong>The planning rule that follows:</strong> apply as early in your window as your science allows. Reviews take six to ten months, and if the first attempt fails you want time for a second. Applying in the last year of a window means betting everything on one shot.</div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ============ CHECKLISTS ============ -->
+<section id="checklists">
+  <div class="wrap">
+    <p class="sec-label">05 · Checklists</p>
+    <h2>What each application actually requires</h2>
+    <p class="sec-intro">Compiled from the official guidelines and proposal instructions. Your ticks are saved in your browser, so you can come back as you work through them.</p>
+
+    <div class="card check-card wb">
+      <div class="check-head"><h3 style="margin:0">Walter Benjamin</h3><button class="btn ghost reset-btn" data-reset="wb" type="button">Reset</button><span class="count" data-count="wb"></span></div>
+      <div class="progressbar"><i data-bar="wb"></i></div>
+      <p class="check-group-label">Before you write</p>
+      <label class="check-item"><input type="checkbox" data-list="wb" id="wb-c1"><span>Decide the variant: position (in Germany) or fellowship (abroad), or a combined plan mapped month by month</span></label>
+      <label class="check-item"><input type="checkbox" data-list="wb" id="wb-c2"><span>If fellowship: confirm you meet the German integration rule (education in Germany, or 3 continuous years as a researcher in Germany)</span></label>
+      <label class="check-item"><input type="checkbox" data-list="wb" id="wb-c3"><span>Choose a host that is a genuine change of environment, and agree the move with the host researcher</span></label>
+      <label class="check-item"><input type="checkbox" data-list="wb" id="wb-c4"><span>If the German host is Max Planck, Fraunhofer, Helmholtz or similar: confirm they will co finance 45% of the position</span></label>
+      <p class="check-group-label">The proposal pack (via elan)</p>
+      <label class="check-item"><input type="checkbox" data-list="wb" id="wb-c5"><span>Project description on template 53.24: max 25 pages, Arial 11 or larger</span></label>
+      <label class="check-item"><input type="checkbox" data-list="wb" id="wb-c6"><span>CV on template 53.200: up to 10 peer reviewed publications plus 10 other outputs</span></label>
+      <label class="check-item"><input type="checkbox" data-list="wb" id="wb-c7"><span>Position: employer statement (form 41.027) plus the host researcher's statement on career support and integration</span></label>
+      <label class="check-item"><input type="checkbox" data-list="wb" id="wb-c8"><span>Fellowship: informal confirmation letter from the host about workplace and resources</span></label>
+      <label class="check-item"><input type="checkbox" data-list="wb" id="wb-c9"><span>If your defense is still pending: thesis copy, proof of submission, supervisor statement</span></label>
+      <label class="check-item"><input type="checkbox" data-list="wb" id="wb-c10"><span>Disclose any use of generative AI in preparing the proposal</span></label>
+      <label class="check-item"><input type="checkbox" data-list="wb" id="wb-c11"><span>No recommendation letters. The DFG does not accept them</span></label>
+      <p class="check-group-label">After submission</p>
+      <label class="check-item"><input type="checkbox" data-list="wb" id="wb-c12"><span>Plan for roughly 6 months of review, and remember funding must start within a year of approval</span></label>
+    </div>
+
+    <div class="card check-card en">
+      <div class="check-head"><h3 style="margin:0">Emmy Noether</h3><button class="btn ghost reset-btn" data-reset="en" type="button">Reset</button><span class="count" data-count="en"></span></div>
+      <div class="progressbar"><i data-bar="en"></i></div>
+      <p class="check-group-label">Before you write</p>
+      <label class="check-item"><input type="checkbox" data-list="en" id="en-c1"><span>Check your window: within 4 years of the doctorate (6 for licensed medicine and psychology), plus any child related extensions</span></label>
+      <label class="check-item"><input type="checkbox" data-list="en" id="en-c2"><span>Confirm roughly 2 years of postdoc experience, the DFG's "as a rule" expectation</span></label>
+      <label class="check-item"><input type="checkbox" data-list="en" id="en-c3"><span>Collect evidence of substantial international research experience for the separate appendix</span></label>
+      <label class="check-item"><input type="checkbox" data-list="en" id="en-c4"><span>Choose host universities (not your PhD university without good reason); you may name several</span></label>
+      <label class="check-item"><input type="checkbox" data-list="en" id="en-c5"><span>Open the model contract conversation (form 53.12) with each host early: doctoral supervision rights and 2 weekly teaching hours are the point</span></label>
+      <label class="check-item"><input type="checkbox" data-list="en" id="en-c6"><span>If applying from abroad: write the confirmation of intent to continue your career in Germany</span></label>
+      <p class="check-group-label">The proposal pack (via elan)</p>
+      <label class="check-item"><input type="checkbox" data-list="en" id="en-c7"><span>Project description: max 25 pages, with the budget planned across the full six years</span></label>
+      <label class="check-item"><input type="checkbox" data-list="en" id="en-c8"><span>CV on template 53.200, doctoral certificate, employer statement(s)</span></label>
+      <label class="check-item"><input type="checkbox" data-list="en" id="en-c9"><span>Request the leader position plus every staff position and cost the project honestly needs; there is no cap</span></label>
+      <label class="check-item"><input type="checkbox" data-list="en" id="en-c10"><span>Disclose any use of generative AI; attach no endorsement letters</span></label>
+      <p class="check-group-label">After submission</p>
+      <label class="check-item"><input type="checkbox" data-list="en" id="en-c11"><span>Plan for roughly 8 months of review, and be ready to start within 6 months of approval</span></label>
+      <label class="check-item"><input type="checkbox" data-list="en" id="en-c12"><span>Calendar the interim evaluation: report due six months before the end of year 3</span></label>
+    </div>
+
+    <div class="card check-card erc">
+      <div class="check-head"><h3 style="margin:0">ERC Starting Grant</h3><button class="btn ghost reset-btn" data-reset="erc" type="button">Reset</button><span class="count" data-count="erc"></span></div>
+      <div class="progressbar"><i data-bar="erc"></i></div>
+      <p class="check-group-label">Before you write</p>
+      <label class="check-item"><input type="checkbox" data-list="erc" id="erc-c1"><span>Verify your window: defense between 1 Jan 2017 and 31 Dec 2026 for the 2027 call, extensions included</span></label>
+      <label class="check-item"><input type="checkbox" data-list="erc" id="erc-c2"><span>Check the resubmission rules if you applied before: a Step 1 C (2025 or 2026 calls) or Step 1 B (2026 calls) blocks 2027</span></label>
+      <label class="check-item"><input type="checkbox" data-list="erc" id="erc-c3"><span>Get your PhD certificate or an institutional letter that shows the defense date</span></label>
+      <label class="check-item"><input type="checkbox" data-list="erc" id="erc-c4"><span>Pick your panel (PE, LS, or SH) and study its scope</span></label>
+      <label class="check-item"><input type="checkbox" data-list="erc" id="erc-c5"><span>Contact the host's research office now; internal deadlines run 1 to 2 months ahead of the ERC's</span></label>
+      <p class="check-group-label">The proposal pack (Funding &amp; Tenders portal)</p>
+      <label class="check-item"><input type="checkbox" data-list="erc" id="erc-c6"><span>Part B1: five page scientific case + four page CV and track record</span></label>
+      <label class="check-item"><input type="checkbox" data-list="erc" id="erc-c7"><span>Part B2: seven page full proposal; feasibility is judged here</span></label>
+      <label class="check-item"><input type="checkbox" data-list="erc" id="erc-c8"><span>Funding ID: declare every current grant and pending application</span></label>
+      <label class="check-item"><input type="checkbox" data-list="erc" id="erc-c9"><span>Build the budget with the host's grants office (100% direct costs + 25% indirect)</span></label>
+      <label class="check-item"><input type="checkbox" data-list="erc" id="erc-c10"><span>If relocating from outside Europe: consider the additional budget request, up to €2M</span></label>
+      <label class="check-item"><input type="checkbox" data-list="erc" id="erc-c11"><span>Host support letter on the official template, signed by the legal representative, submitted with the proposal</span></label>
+      <p class="check-group-label">After submission</p>
+      <label class="check-item"><input type="checkbox" data-list="erc" id="erc-c12"><span>Block June 2027 for a possible interview, and hold decisions until the 24 Aug 2027 results</span></label>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+<!-- ============ FAQ ============ -->
+<section id="faq">
+  <div class="wrap">
+    <p class="sec-label">06 · Questions researchers actually ask</p>
+    <h2>Honest answers, with receipts</h2>
+    <p class="sec-intro">Collected from the official DFG and ERC FAQ pages and from the questions international researchers keep asking on forums like Academia Stack Exchange. Every answer links to where it comes from.</p>
+
+    <details class="faq">
+      <summary>I did my PhD outside Germany and have never worked there. Which of these can I even apply for?</summary>
+      <div class="a"><p>Three of the four doors are open. The Walter Benjamin <em>Position</em> (in Germany) has no nationality or prior Germany requirement. Emmy Noether explicitly invites applications from abroad; you just add a statement of intent to stay in Germany afterwards. The ERC never cared where you or your PhD come from. The one closed door is the Walter Benjamin <em>Fellowship</em> abroad, which requires existing integration into the German research system.</p>
+      <p><a href="https://www.dfg.de/en/research-funding/proposal-funding-process/faq/walter-benjamin" target="_blank" rel="noopener">DFG Walter Benjamin FAQ</a> · <a href="https://www.dfg.de/resource/blob/168076/50-02-en.pdf" target="_blank" rel="noopener">DFG form 50.02</a> · <a href="https://erc.europa.eu/apply-grant/non-european-researchers" target="_blank" rel="noopener">ERC non-European researchers</a></p></div>
+    </details>
+
+    <details class="faq">
+      <summary>Does my citizenship or country of origin matter at all?</summary>
+      <div class="a"><p>For eligibility, no. None of the three programmes checks your passport; they check career stage and where the work will happen. Two practical caveats: EU sanctions exclude host institutions established in Russia, Belarus, and non government controlled territories of Ukraine (individual researchers of those nationalities based elsewhere remain eligible, with screening), and your citizenship does affect the visa procedure for moving to Germany, though not the outcome.</p>
+      <p><a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2027/wp_horizon-erc-2027_en.pdf" target="_blank" rel="noopener">ERC Work Programme 2027, Annex 3</a> · <a href="https://www.euraxess.de/germany/information-assistance/entry-conditions-and-visas" target="_blank" rel="noopener">EURAXESS Germany, visas</a></p></div>
+    </details>
+
+    <details class="faq">
+      <summary>Which date starts my eligibility clock?</summary>
+      <div class="a"><p>It depends on the funder, and the difference can decide a borderline case. The ERC counts from the date of your successful defense (first PhD, if you have several). The DFG counts from your certificate date if it was issued within a year of the defense, otherwise from the defense. If your certificate took months to arrive, the DFG clock may start later than the ERC clock, which buys you time with the DFG.</p>
+      <p><a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/information-for-applicants_he-erc-stg-cog_en.pdf" target="_blank" rel="noopener">ERC Information for Applicants</a> · <a href="https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/emmy-noether/faq" target="_blank" rel="noopener">DFG Emmy Noether FAQ</a></p></div>
+    </details>
+
+    <details class="faq">
+      <summary>Can I apply before my defense?</summary>
+      <div class="a"><p>Walter Benjamin: yes, as soon as your thesis is submitted to the examinations office; include the thesis, proof of submission, and a supervisor statement, and funds flow only after you pass. ERC 2027: your defense must happen by 31 December 2026, which is after the October deadline, so you can apply with a scheduled defense. Emmy Noether expects a completed doctorate plus around two years of postdoc experience, so it is not a pre defense option.</p>
+      <p><a href="https://www.dfg.de/resource/blob/168116/50-10-en.pdf" target="_blank" rel="noopener">DFG form 50.10</a> · <a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2027/wp_horizon-erc-2027_en.pdf" target="_blank" rel="noopener">ERC Work Programme 2027</a></p></div>
+    </details>
+
+    <details class="faq">
+      <summary>Stipend or employment contract: what is the real difference in Germany?</summary>
+      <div class="a"><p>An employment contract (Walter Benjamin Position, Emmy Noether, ERC) comes with the full German social package: public health insurance, pension contributions, unemployment insurance, paid vacation. A stipend (Walter Benjamin Fellowship abroad, Humboldt) is usually tax free but builds no pension, no unemployment cover, and you arrange health insurance yourself. Stipend years also tend not to count as "experience" when a later employer sets your TV-L salary step. If the net amounts look similar, the contract is almost always worth more.</p>
+      <p><a href="https://www.euraxess.de/germany/information-assistance/social-security-and-optional-insurances" target="_blank" rel="noopener">EURAXESS Germany, social security</a> · <a href="https://academia.stackexchange.com/questions/149156/" target="_blank" rel="noopener">Academia SE discussion</a></p></div>
+    </details>
+
+    <details class="faq">
+      <summary>Do I need to speak German?</summary>
+      <div class="a"><p>Not for the applications. DFG proposals can be written in English, and ERC proposals effectively are English. Research groups in the sciences mostly run in English. You will feel the gap in daily life instead: immigration offices, rental contracts, and insurance paperwork are German affairs, and a B1 certificate shortens the EU Blue Card settlement track from 27 to 21 months. If you plan to stay (which Emmy Noether assumes), start learning.</p>
+      <p><a href="https://www.dfg.de/en/research-funding/proposal-funding-process/faq/walter-benjamin" target="_blank" rel="noopener">DFG FAQ</a> · <a href="https://www.euraxess.de/germany/information-assistance/entry-conditions-and-visas" target="_blank" rel="noopener">EURAXESS Germany</a></p></div>
+    </details>
+
+    <details class="faq">
+      <summary>What are my actual odds?</summary>
+      <div class="a"><p>Emmy Noether runs at roughly 20 percent across all fields by the DFG's own figure. The ERC Starting Grant 2025 call funded 478 of 3,928 proposals, 12.2 percent, and applications rose 22 percent the following year. The DFG does not publish a Walter Benjamin success rate. For all three, the quality of fit between you, the project, and the host moves the odds more than any statistic.</p>
+      <p><a href="https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/emmy-noether/faq" target="_blank" rel="noopener">DFG Emmy Noether FAQ</a> · <a href="https://erc.europa.eu/system/files/2025-09/erc-2025-stg-statistics.pdf" target="_blank" rel="noopener">ERC 2025 statistics</a></p></div>
+    </details>
+
+    <details class="faq">
+      <summary>What if my chosen university refuses to sign what the funder requires?</summary>
+      <div class="a"><p>It happens, and both funders planned for it. For Emmy Noether you may name several candidate universities in one proposal, and if a university will not sign the model contract you can set up the group elsewhere after consulting the DFG. For the ERC, any eligible institution in the EU or an associated country can be your host; if one research office declines, take the proposal to another. The host support letter is a real commitment, which is exactly why you start that conversation months early.</p>
+      <p><a href="https://www.dfg.de/resource/blob/168076/50-02-en.pdf" target="_blank" rel="noopener">DFG form 50.02</a> · <a href="https://academia.stackexchange.com/questions/165976/" target="_blank" rel="noopener">Academia SE discussion</a></p></div>
+    </details>
+
+    <details class="faq">
+      <summary>Can I take the grant with me if I change institutions?</summary>
+      <div class="a"><p>The ERC grant is famously portable: it belongs to you and moves to any eligible host, which gives you real negotiating power. DFG grants can generally transfer between German institutions with DFG consent, but a Walter Benjamin award fixes the number of funded months per named host at approval, so you cannot switch hosts mid award. Choose carefully the first time.</p>
+      <p><a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2027/wp_horizon-erc-2027_en.pdf" target="_blank" rel="noopener">ERC Work Programme 2027</a> · <a href="https://www.dfg.de/en/research-funding/proposal-funding-process/faq/walter-benjamin" target="_blank" rel="noopener">DFG Walter Benjamin FAQ</a></p></div>
+    </details>
+
+    <details class="faq">
+      <summary>I have children. How do the windows change?</summary>
+      <div class="a"><p>Every programme extends, but by different amounts. ERC: a flat 18 months per child for the mother, and the documented leave actually taken for fathers, with no cap on the total. Emmy Noether: two years per child for women, one for men (two with documented care beyond a year), capped at six extra years. Walter Benjamin has no fixed window, and the DFG explicitly counts parental time in your favour when judging the "early phase". Illness, national service, and clinical training also extend the ERC window.</p>
+      <p><a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2027/wp_horizon-erc-2027_en.pdf" target="_blank" rel="noopener">ERC Work Programme 2027</a> · <a href="https://www.dfg.de/resource/blob/168076/50-02-en.pdf" target="_blank" rel="noopener">DFG form 50.02</a></p></div>
+    </details>
+
+    <details class="faq">
+      <summary>Does time in industry disqualify me?</summary>
+      <div class="a"><p>No rule says so. The ERC judges your track record against the calendar window, however you spent it; coming back from a company is possible, though your publication record competes with people who never left academia. The Emmy Noether four year clock keeps running during industry years, which is the bigger constraint. For Walter Benjamin, what matters is whether you are still plausibly in the early postdoc phase.</p>
+      <p><a href="https://academia.stackexchange.com/questions/210103/" target="_blank" rel="noopener">Academia SE discussion</a> · <a href="https://www.dfg.de/resource/blob/168076/50-02-en.pdf" target="_blank" rel="noopener">DFG form 50.02</a></p></div>
+    </details>
+
+    <details class="faq">
+      <summary>Can I hold or apply for other funding at the same time?</summary>
+      <div class="a"><p>Within limits. The DFG will not fund a project that another funder is already paying for on the same topic; if two funders say yes, you choose one. You also cannot run an Emmy Noether application in parallel with a DFG research grant that funds your own position. The ERC requires full disclosure of every grant and pending application in the Funding ID, allows at most one main ERC grant at a time, and lets you have only one proposal under evaluation.</p>
+      <p><a href="https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/emmy-noether/faq" target="_blank" rel="noopener">DFG Emmy Noether FAQ</a> · <a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2027/wp_horizon-erc-2027_en.pdf" target="_blank" rel="noopener">ERC Work Programme 2027</a></p></div>
+    </details>
+
+    <details class="faq">
+      <summary>What happens if I get rejected?</summary>
+      <div class="a"><p>With the DFG you can revise and resubmit; there is no formal lockout, and with rolling deadlines your timing is your own. The ERC is stricter: a C at Step 1 in the 2025 or 2026 calls, or a B at Step 1 in the 2026 calls, makes you ineligible for the 2027 calls. A B at Step 2 (reaching the interview but not funded) carries no ban at all. Resubmitted ERC proposals are read fresh, without the old reviews attached.</p>
+      <p><a href="https://erc.europa.eu/news-events/news/erc-scientific-council-readjusts-rules-reapplication" target="_blank" rel="noopener">ERC reapplication rules</a></p></div>
+    </details>
+
+    <details class="faq">
+      <summary>Will one of these get me tenure in Germany?</summary>
+      <div class="a"><p>Not directly; the funders fund projects, and tenure in Germany means winning a professorship. But the pathways are real. Emmy Noether exists precisely to make you appointable to a professorship without habilitation, and the interim evaluation checks that your university treats you like a junior professor. An ERC grant is strong leverage, since several universities have standing policies of offering tenure track positions to grantees, who could otherwise carry the grant to a competitor.</p>
+      <p><a href="https://www.dfg.de/resource/blob/168076/50-02-en.pdf" target="_blank" rel="noopener">DFG form 50.02</a> · <a href="https://academia.stackexchange.com/questions/220829/" target="_blank" rel="noopener">Academia SE discussion</a></p></div>
+    </details>
+
+    <details class="faq">
+      <summary>The Walter Benjamin pays a stipend abroad. What should I watch out for?</summary>
+      <div class="a"><p>Three things. First, the payments go only to a German bank account, monthly on the 15th. Second, absences from your host country stop the foreign allowance from day 29, so long trips home have a price. Third, if the United States is your destination, check the J-1 visa's two year home residency rule before you commit; the DFG's own FAQ flags it. Earnings up to €600 per month are not offset against the stipend, and host top ups to the local postdoc level are explicitly allowed.</p>
+      <p><a href="https://www.dfg.de/en/research-funding/proposal-funding-process/faq/walter-benjamin" target="_blank" rel="noopener">DFG Walter Benjamin FAQ</a> · <a href="https://www.dfg.de/resource/blob/381594/dfg-2-00-de-v0126.pdf" target="_blank" rel="noopener">DFG form 2.00 §23 (German)</a></p></div>
+    </details>
+
+    <details class="faq">
+      <summary>Where can I read successful proposals?</summary>
+      <div class="a"><p>Most winners keep theirs private, but a growing number share them openly; the community maintained Open Grants repository collects examples, including ERC Starting Grants. Your university's research office often keeps an internal collection too, and that office should be your first stop before paying for any preparation course.</p>
+      <p><a href="https://www.ogrants.org/" target="_blank" rel="noopener">Open Grants</a> · <a href="https://academia.stackexchange.com/questions/44569/" target="_blank" rel="noopener">Academia SE discussion</a></p></div>
+    </details>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ============ MOVING ============ -->
+<section id="moving">
+  <div class="wrap">
+    <p class="sec-label">07 · The move itself</p>
+    <h2>Visas, insurance, and the fine print of arriving</h2>
+    <p class="sec-intro">The grant is only half the move. These are the rules that shape your first year in Germany, from official sources, mainly EURAXESS Germany.</p>
+
+    <div class="two-col">
+      <div>
+        <h3>Your residence permit</h3>
+        <p>Funded researchers with a doctorate normally use the <strong>researcher permit under §18d</strong> of the Residence Act. It works for both employment contracts and fellowships, requires a hosting agreement with a recognised research institution, runs at least a year, and can be extended by up to 18 months for job seeking after the research ends. Spouses and children get residence with full work rights.</p>
+        <p>If you have an employment contract above €50,700 gross per year (or €45,934 in shortage occupations, which include scientists), the <strong>EU Blue Card</strong> is the alternative: permanent settlement after 27 months, or 21 with German at B1. A full time TV-L E13 postdoc salary typically clears the shortage threshold. Citizens of Australia, Canada, Israel, Japan, New Zealand, South Korea, the UK, and the US may enter visa free and apply after arrival.</p>
+      </div>
+      <div>
+        <h3>The health insurance trap</h3>
+        <p>On an employment contract you are enrolled in the social system automatically. On a fellowship you are not: no pension, no unemployment insurance, and health insurance is your own job, while remaining a legal condition of the residence permit.</p>
+        <p>One rule matters more than the rest: researchers arriving on a §18d permit since March 2024 can apply to join <strong>statutory</strong> health insurance within three months of arrival. Take that window seriously. Choosing private insurance carelessly can lock you out of the statutory system for good, which gets expensive with age and family.</p>
+        <p>If you later leave Germany for good with under five years of pension contributions, you can usually reclaim your employee share after a 24 month wait; confirm details with Deutsche Rentenversicherung.</p>
+      </div>
+    </div>
+
+    <div class="linkbox">
+      <strong>Official starting points</strong>
+      <a href="https://www.euraxess.de/germany/information-assistance/entry-conditions-and-visas" target="_blank" rel="noopener">EURAXESS: visas and entry</a>
+      <a href="https://www.euraxess.de/germany/information-assistance/social-security-and-optional-insurances" target="_blank" rel="noopener">EURAXESS: social security</a>
+      <a href="https://www.research-in-germany.org/research-landscape.html" target="_blank" rel="noopener">Research in Germany: the landscape</a>
+      <a href="https://www.make-it-in-germany.com/en/visa-residence/types/researchers" target="_blank" rel="noopener">Make it in Germany: researchers</a>
+    </div>
+
+    <h3 style="margin-top:34px">Who can host you</h3>
+    <p class="sec-intro">Germany has around 430 universities and more than 1,000 public research institutions. The four big non university families split the work roughly like this: <strong>Max Planck</strong> for curiosity driven basic research, <strong>Helmholtz</strong> for large infrastructure and grand challenges, <strong>Leibniz</strong> for everything bridging basic and applied, and <strong>Fraunhofer</strong> for contract research with industry. All can host DFG funded researchers, with one budget quirk: at Max Planck, Fraunhofer, and Helmholtz institutes, a Walter Benjamin position must be 45 percent co financed by the institute itself. For profit companies cannot host DFG grants.</p>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ============ ALTERNATIVES ============ -->
+<section id="alternatives">
+  <div class="wrap">
+    <p class="sec-label">08 · If none of the three fits today</p>
+    <h2>Adjacent routes worth knowing</h2>
+    <p class="sec-intro">Honest one liners, because the right programme is sometimes someone else's.</p>
+    <div class="alt-grid">
+      <div class="alt">
+        <h4>Humboldt Research Fellowship</h4>
+        <p>For researchers coming from abroad, within 4 years of the PhD: €3,000 per month for 6 to 24 months at a German host of your choice. A stipend, so the insurance caveats apply. Decisions in roughly 3 to 6 months.</p>
+        <a href="https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship" target="_blank" rel="noopener">humboldt-foundation.de</a>
+      </div>
+      <div class="alt">
+        <h4>MSCA Postdoctoral Fellowships</h4>
+        <p>The EU's mobility fellowship: up to 8 years post PhD, with the rule that you must not have spent more than 12 of the last 36 months in the host country. A real employment contract. Annual calls.</p>
+        <a href="https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships" target="_blank" rel="noopener">marie-sklodowska-curie-actions.ec.europa.eu</a>
+      </div>
+      <div class="alt">
+        <h4>DAAD PRIME</h4>
+        <p>The reverse route: an 18 month German university contract funding 12 months abroad plus 6 months back in Germany. All nationalities, and a contract rather than a stipend.</p>
+        <a href="https://www.daad.de/en/studying-in-germany/scholarships/daad-funding-programmes/prime/" target="_blank" rel="noopener">daad.de</a>
+      </div>
+      <div class="alt">
+        <h4>Helmholtz Investigator Groups</h4>
+        <p>Group leadership at a Helmholtz centre with at least €300,000 per year, for researchers 2 to 6 years past the PhD with international experience. Run jointly with a partner university.</p>
+        <a href="https://www.helmholtz.de/en/career/careers-at-helmholtz/helmholtz-investigator-groups/" target="_blank" rel="noopener">helmholtz.de</a>
+      </div>
+      <div class="alt">
+        <h4>Max Planck Research Groups</h4>
+        <p>The Max Planck Society's own group leader track: W2 level positions, six year contracts, packages up to about €2.7 million, one central call each autumn.</p>
+        <a href="https://www.mpg.de/max-planck-research-groups" target="_blank" rel="noopener">mpg.de</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ============ BLOG TEASER ============ -->
+<section id="blog-teaser">
+  <div class="wrap">
+    <p class="sec-label">09 · The essay</p>
+    <div class="card">
+      <h2 style="margin-bottom:6px">A physicist's map of German funding</h2>
+      <p class="sec-intro" style="margin-bottom:14px">Why the same three programmes keep deciding research careers in Germany, what actually separates them, and the five things I wish someone had told me before I started reading guideline PDFs. The story behind this site, in about six minutes.</p>
+      <a class="btn primary" href="blog.html" style="text-decoration:none;display:inline-block">Read the essay</a>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ============ SOURCES ============ -->
+<section id="sources" class="sources">
+  <div class="wrap">
+    <p class="sec-label">10 · Sources and acknowledgements</p>
+    <h2>Where every fact comes from</h2>
+    <p class="sec-intro">All programme information on this site was compiled from the official public sources below, accessed on 9 August 2026. The facts belong to their publishers; this site only organizes them. Rules change, and the official pages always win over anything written here. If you spot an error, please <a href="https://github.com/JeelSwami/german-funding-navigator/issues" target="_blank" rel="noopener">open an issue</a>.</p>
+
+    <h3>Deutsche Forschungsgemeinschaft (DFG)</h3>
+    <ol>
+      <li><a href="https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/walter-benjamin" target="_blank" rel="noopener">Walter Benjamin Programme page</a> and <a href="https://www.dfg.de/en/research-funding/proposal-funding-process/faq/walter-benjamin" target="_blank" rel="noopener">official FAQ</a></li>
+      <li><a href="https://www.dfg.de/resource/blob/168116/50-10-en.pdf" target="_blank" rel="noopener">Form 50.10 (06/2026): Walter Benjamin programme guidelines</a>, <a href="https://www.dfg.de/resource/blob/168202/52-19-en.pdf" target="_blank" rel="noopener">form 52.19: fellowship module</a>, <a href="https://www.dfg.de/resource/blob/168198/52-18-en.pdf" target="_blank" rel="noopener">form 52.18: position module</a></li>
+      <li><a href="https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/emmy-noether" target="_blank" rel="noopener">Emmy Noether Programme page</a> and <a href="https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/emmy-noether/faq" target="_blank" rel="noopener">official FAQ</a></li>
+      <li><a href="https://www.dfg.de/resource/blob/168076/50-02-en.pdf" target="_blank" rel="noopener">Form 50.02 (03/2025): Emmy Noether programme guidelines</a>, <a href="https://www.dfg.de/resource/blob/167484/10-223-en.pdf" target="_blank" rel="noopener">form 10.223: interim evaluation</a>, <a href="https://www.dfg.de/resource/blob/167438/10-210-en.pdf" target="_blank" rel="noopener">form 10.210: review guidelines</a>, <a href="https://www.dfg.de/resource/blob/167470/10-219-en.pdf" target="_blank" rel="noopener">form 10.219: Walter Benjamin review guidelines</a></li>
+      <li><a href="https://www.dfg.de/resource/blob/368646/60-12-2026-en.pdf" target="_blank" rel="noopener">Form 60.12 (01/2026): personnel rates for 2026</a>, <a href="https://www.dfg.de/resource/blob/381594/dfg-2-00-de-v0126.pdf" target="_blank" rel="noopener">form 2.00 (01/2026): usage guidelines, §23 (German)</a>, <a href="https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/research-fellowships/calculator" target="_blank" rel="noopener">fellowship award calculator</a></li>
+      <li><a href="https://www.dfg.de/en/research-funding/proposal-funding-process/eligibility" target="_blank" rel="noopener">DFG principles of institutional eligibility</a> and <a href="https://elan.dfg.de/" target="_blank" rel="noopener">elan submission portal</a></li>
+    </ol>
+
+    <h3>European Research Council and European Commission</h3>
+    <ol>
+      <li><a href="https://erc.europa.eu/apply-grant/starting-grant" target="_blank" rel="noopener">ERC Starting Grant page</a> and <a href="https://erc.europa.eu/apply-grant/non-european-researchers" target="_blank" rel="noopener">ERC page for non-European researchers</a></li>
+      <li><a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2027/wp_horizon-erc-2027_en.pdf" target="_blank" rel="noopener">ERC Work Programme 2027</a> and <a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026/wp_horizon-erc-2026_en.pdf" target="_blank" rel="noopener">Work Programme 2026</a></li>
+      <li><a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/information-for-applicants_he-erc-stg-cog_en.pdf" target="_blank" rel="noopener">Information for Applicants, StG/CoG 2027</a></li>
+      <li><a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/list-3rd-country-participation_horizon-euratom_en.pdf" target="_blank" rel="noopener">List of countries participating in Horizon Europe (V4.0, July 2026)</a></li>
+      <li><a href="https://erc.europa.eu/system/files/2025-09/erc-2025-stg-statistics.pdf" target="_blank" rel="noopener">ERC Starting Grant 2025 statistics</a>, <a href="https://erc.europa.eu/news-events/news/starting-grants-2026-applications-facts-and-figures" target="_blank" rel="noopener">2026 application figures</a></li>
+      <li><a href="https://erc.europa.eu/news-events/news/changes-2026-and-2027-work-programmes" target="_blank" rel="noopener">Changes in the 2026 and 2027 Work Programmes</a> and <a href="https://erc.europa.eu/news-events/news/erc-scientific-council-readjusts-rules-reapplication" target="_blank" rel="noopener">reapplication rules adjustment (April 2026)</a></li>
+    </ol>
+
+    <h3>Moving and living in Germany</h3>
+    <ol>
+      <li><a href="https://www.euraxess.de/germany/information-assistance/entry-conditions-and-visas" target="_blank" rel="noopener">EURAXESS Germany: entry conditions and visas</a> and <a href="https://www.euraxess.de/germany/information-assistance/social-security-and-optional-insurances" target="_blank" rel="noopener">social security and insurance</a></li>
+      <li><a href="https://www.research-in-germany.org/research-landscape.html" target="_blank" rel="noopener">Research in Germany: the research landscape</a></li>
+      <li><a href="https://www.make-it-in-germany.com/en/visa-residence/types/researchers" target="_blank" rel="noopener">Make it in Germany: visas for researchers</a></li>
+    </ol>
+
+    <h3>Adjacent programmes</h3>
+    <ol>
+      <li><a href="https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship" target="_blank" rel="noopener">Alexander von Humboldt Foundation: Research Fellowship</a></li>
+      <li><a href="https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships" target="_blank" rel="noopener">MSCA Postdoctoral Fellowships</a></li>
+      <li><a href="https://www.daad.de/en/studying-in-germany/scholarships/daad-funding-programmes/prime/" target="_blank" rel="noopener">DAAD PRIME</a></li>
+      <li><a href="https://www.helmholtz.de/en/career/careers-at-helmholtz/helmholtz-investigator-groups/" target="_blank" rel="noopener">Helmholtz Investigator Groups</a></li>
+      <li><a href="https://www.mpg.de/max-planck-research-groups" target="_blank" rel="noopener">Max Planck Research Groups</a></li>
+    </ol>
+
+    <h3>Community wisdom</h3>
+    <ol>
+      <li>Questions and answers on <a href="https://academia.stackexchange.com/" target="_blank" rel="noopener">Academia Stack Exchange</a>, individually linked where cited, informed the FAQ section and the choice of what to explain. Thanks to the researchers who asked publicly what everyone wonders privately.</li>
+      <li><a href="https://www.ogrants.org/" target="_blank" rel="noopener">Open Grants</a>, a community collection of openly shared grant proposals.</li>
+    </ol>
+
+    <p class="fine">Acknowledgement: this site exists because the DFG, the ERC, EURAXESS Germany, and the other publishers above maintain unusually thorough public documentation. The compilation, organization, and any mistakes are mine alone. Nothing here is legal advice or an official statement by any funder, and funding decisions rest entirely with the funding organizations.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p><strong>German Funding Navigator</strong> · built and maintained by Jeel Swami · rules verified 9 August 2026</p>
+    <p>Free to use for study and educational purposes. Not for commercial use. Republishing the compiled content requires permission. The underlying programme information belongs to the DFG, the ERC and European Commission, and the other credited sources. <a href="https://github.com/JeelSwami/german-funding-navigator" target="_blank" rel="noopener">Source on GitHub</a> · <a href="https://github.com/JeelSwami/german-funding-navigator/blob/main/LICENSE.md" target="_blank" rel="noopener">License</a></p>
+    <p>This is an independent project. It is not affiliated with, or endorsed by, the DFG, the ERC, the European Commission, or any other organization named here.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ---------- theme ---------- */
+  var themeBtn = document.getElementById("themeBtn");
+  function applyTheme(mode) {
+    if (mode === "light" || mode === "dark") {
+      document.documentElement.setAttribute("data-theme", mode);
+    } else {
+      document.documentElement.removeAttribute("data-theme");
+    }
+    themeBtn.textContent = mode === "light" ? "Light" : mode === "dark" ? "Dark" : "Auto";
+  }
+  var savedTheme = null;
+  try { savedTheme = localStorage.getItem("gfn-theme"); } catch (e) {}
+  applyTheme(savedTheme || "auto");
+  themeBtn.addEventListener("click", function () {
+    var cur = themeBtn.textContent.toLowerCase();
+    var next = cur === "auto" ? "light" : cur === "light" ? "dark" : "auto";
+    try { localStorage.setItem("gfn-theme", next); } catch (e) {}
+    applyTheme(next);
+  });
+
+  /* ---------- ERC countdown ---------- */
+  var ERC_DEADLINE = new Date(2026, 9, 14); // 14 Oct 2026
+  var cd = document.getElementById("ercCountdown");
+  if (cd) {
+    var days = Math.ceil((ERC_DEADLINE - new Date()) / 86400000);
+    cd.textContent = days > 1 ? days + " days from today" : days === 1 ? "tomorrow" : days === 0 ? "today" : "now passed";
+  }
+
+  /* ---------- checklists ---------- */
+  var boxes = document.querySelectorAll('input[type="checkbox"][data-list]');
+  function updateList(list) {
+    var all = document.querySelectorAll('input[data-list="' + list + '"]');
+    var done = 0;
+    all.forEach(function (b) { if (b.checked) done++; });
+    var bar = document.querySelector('[data-bar="' + list + '"]');
+    var count = document.querySelector('[data-count="' + list + '"]');
+    if (bar) bar.style.width = (all.length ? (100 * done / all.length) : 0) + "%";
+    if (count) count.textContent = done + " / " + all.length;
+  }
+  boxes.forEach(function (b) {
+    try { b.checked = localStorage.getItem("gfn-" + b.id) === "1"; } catch (e) {}
+    b.addEventListener("change", function () {
+      try { localStorage.setItem("gfn-" + b.id, b.checked ? "1" : "0"); } catch (e) {}
+      updateList(b.dataset.list);
+    });
+  });
+  ["wb", "en", "erc"].forEach(updateList);
+  document.querySelectorAll("[data-reset]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      document.querySelectorAll('input[data-list="' + btn.dataset.reset + '"]').forEach(function (b) {
+        b.checked = false;
+        try { localStorage.setItem("gfn-" + b.id, "0"); } catch (e) {}
+      });
+      updateList(btn.dataset.reset);
+    });
+  });
+
+  /* ---------- wizard ---------- */
+  var S = {
+    phdStatus: null, defM: null, defY: null, certLag: null,
+    independence: null, postdocYears: null, clinician: null,
+    children: 0, role: null, docLeave: 0, otherMonths: 0,
+    education: null, inGermany3: null, base: null, goal: null
+  };
+  var stepIndex = 0;
+  var wizBody = document.getElementById("wizBody");
+  var wizBack = document.getElementById("wizBack");
+  var wizNext = document.getElementById("wizNext");
+  var wizProgress = document.getElementById("wizProgress");
+  var verdictsEl = document.getElementById("verdicts");
+  var TOTAL_STEPS = 4;
+
+  function radio(name, value, title, sub) {
+    var checked = S[name] === value ? " checked" : "";
+    var sel = S[name] === value ? " selected" : "";
+    return '<label class="opt' + sel + '"><input type="radio" name="' + name + '" value="' + value + '"' + checked + '><span><span class="o-title">' + title + "</span>" + (sub ? '<br><span class="o-sub">' + sub + "</span>" : "") + "</span></label>";
+  }
+
+  function monthYearSelects() {
+    var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    var h = '<div class="wiz-inline"><div><label for="defM">Month</label><select id="defM"><option value="">–</option>';
+    months.forEach(function (m, i) { h += '<option value="' + (i + 1) + '"' + (S.defM === i + 1 ? " selected" : "") + ">" + m + "</option>"; });
+    h += '</select></div><div><label for="defY">Year</label><select id="defY"><option value="">–</option>';
+    for (var y = 2027; y >= 2005; y--) h += '<option value="' + y + '"' + (S.defY === y ? " selected" : "") + ">" + y + "</option>";
+    h += "</select></div></div>";
+    return h;
+  }
+
+  function renderStep() {
+    var h = "";
+    if (stepIndex === 0) {
+      h += '<p class="wiz-step-label">Step 1 of 4 · Your PhD</p>';
+      h += '<fieldset><legend>Where does your doctorate stand?</legend>';
+      h += radio("phdStatus", "none", "Still writing", "thesis not yet submitted");
+      h += radio("phdStatus", "submitted", "Thesis submitted, defense pending", "you can already apply to Walter Benjamin at this stage");
+      h += radio("phdStatus", "done", "Defense passed", "");
+      h += "</fieldset>";
+      if (S.phdStatus === "done" || S.phdStatus === "submitted") {
+        h += '<p class="wiz-q" style="font-size:1.05rem">' + (S.phdStatus === "done" ? "When was your defense (viva)?" : "When do you expect to defend?") + "</p>";
+        h += monthYearSelects();
+      }
+      if (S.phdStatus === "done") {
+        h += '<fieldset style="margin-top:10px"><legend style="font-size:1.05rem">Was your doctoral certificate issued within a year of the defense?</legend>';
+        h += '<p class="wiz-help">The DFG clock starts from the certificate when it followed within a year, otherwise from the defense. The ERC always counts from the defense.</p>';
+        h += radio("certLag", "yes", "Yes, within a year", "");
+        h += radio("certLag", "no", "No, it took longer", "");
+        h += radio("certLag", "notyet", "Not issued yet", "");
+        h += "</fieldset>";
+      }
+    } else if (stepIndex === 1) {
+      h += '<p class="wiz-step-label">Step 2 of 4 · Your experience</p>';
+      h += "<fieldset><legend>How independent has your research been so far?</legend>";
+      h += radio("independence", "none", "I have worked within other people's projects", "typical for a first postdoc");
+      h += radio("independence", "some", "Partly independent, but no formal group of my own", "own ideas, maybe a small grant, no staff responsibility");
+      h += radio("independence", "leader", "I already lead a research group, or hold a professorship or habilitation", "");
+      h += "</fieldset>";
+      h += "<fieldset><legend>How many years of postdoc experience do you have?</legend>";
+      h += radio("postdocYears", "0", "Less than 1", "");
+      h += radio("postdocYears", "1", "1 to 2", "");
+      h += radio("postdocYears", "2", "2 to 4", "");
+      h += radio("postdocYears", "4", "More than 4", "");
+      h += "</fieldset>";
+      h += "<fieldset><legend>Are you a licensed physician or psychologist?</legend>";
+      h += '<p class="wiz-help">A licence to practice (Approbation) stretches the Emmy Noether window from four to six years.</p>';
+      h += radio("clinician", "yes", "Yes", "");
+      h += radio("clinician", "no", "No", "");
+      h += "</fieldset>";
+    } else if (stepIndex === 2) {
+      h += '<p class="wiz-step-label">Step 3 of 4 · Life events (they extend your windows)</p>';
+      h += '<fieldset><legend>How many children do you care for?</legend>';
+      h += '<p class="wiz-help">Children born before or after the PhD both count for the ERC; the DFG counts children under 12 in your household.</p>';
+      h += '<div class="wiz-inline"><div><label for="childN">Children</label><select id="childN">';
+      for (var c = 0; c <= 4; c++) h += '<option value="' + c + '"' + (S.children === c ? " selected" : "") + ">" + c + "</option>";
+      h += "</select></div></div></fieldset>";
+      if (S.children > 0) {
+        h += "<fieldset><legend>Which rule applies to you?</legend>";
+        h += '<p class="wiz-help">The funders phrase these extensions by parental role: the ERC grants mothers a flat 18 months per child, and fathers the documented leave they actually took. The DFG grants women 2 years per child and men 1 (2 with documentation).</p>';
+        h += radio("role", "mother", "I am the mother", "");
+        h += radio("role", "father", "I am the father or another caregiver", "");
+        h += "</fieldset>";
+        if (S.role === "father") {
+          h += '<div class="wiz-inline"><div><label for="docLeave">Months of documented parental leave you took, in total</label><input type="number" id="docLeave" min="0" max="120" value="' + S.docLeave + '"></div></div>';
+        }
+      }
+      h += '<div class="wiz-inline" style="margin-top:14px"><div><label for="otherM">Months of other documented interruptions since the PhD (long illness over 90 days, national service, clinical training)</label><input type="number" id="otherM" min="0" max="120" value="' + S.otherMonths + '"></div></div>';
+      h += '<p class="wiz-help">Clinical training counts toward the ERC window up to a maximum of four years. For the DFG these situations are considered case by case rather than by formula.</p>';
+    } else if (stepIndex === 3) {
+      h += '<p class="wiz-step-label">Step 4 of 4 · You and Germany</p>';
+      h += "<fieldset><legend>Where did you spend most of your schooling and university education, before the PhD?</legend>";
+      h += radio("education", "germany", "Mostly in Germany", "");
+      h += radio("education", "abroad", "Mostly outside Germany", "");
+      h += "</fieldset>";
+      if (S.education === "abroad") {
+        h += "<fieldset><legend>Have you worked as a researcher in Germany continuously for the last 3 years?</legend>";
+        h += radio("inGermany3", "yes", "Yes", "");
+        h += radio("inGermany3", "no", "No", "");
+        h += "</fieldset>";
+      }
+      h += "<fieldset><legend>Where are you based right now?</legend>";
+      h += radio("base", "de", "In Germany", "");
+      h += radio("base", "eu", "In the EU or a Horizon Europe associated country", "including the UK, Switzerland, Norway, Israel, Türkiye and others");
+      h += radio("base", "outside", "Outside the EU and associated countries", "the ERC relocation top up of up to €2M applies to you");
+      h += "</fieldset>";
+      h += "<fieldset><legend>What do you want to fund?</legend>";
+      h += radio("goal", "postdoc-de", "My own postdoc project in Germany", "");
+      h += radio("goal", "postdoc-abroad", "My own postdoc project outside Germany", "");
+      h += radio("goal", "group", "My own research group", "");
+      h += radio("goal", "all", "Show me everything", "");
+      h += "</fieldset>";
+    }
+    wizBody.innerHTML = h;
+    wizBack.style.visibility = stepIndex === 0 ? "hidden" : "visible";
+    wizNext.textContent = stepIndex === TOTAL_STEPS - 1 ? "See my results" : "Continue";
+    var ph = "";
+    for (var i = 0; i < TOTAL_STEPS; i++) ph += '<span class="' + (i <= stepIndex ? "done" : "") + '"></span>';
+    wizProgress.innerHTML = ph;
+    bindStepInputs();
+  }
+
+  function bindStepInputs() {
+    wizBody.querySelectorAll('input[type="radio"]').forEach(function (r) {
+      r.addEventListener("change", function () {
+        S[r.name] = isNaN(r.value) || r.value === "" ? r.value : (r.name === "postdocYears" ? r.value : r.value);
+        S[r.name] = r.value;
+        renderStep();
+      });
+    });
+    var defM = wizBody.querySelector("#defM"), defY = wizBody.querySelector("#defY");
+    if (defM) defM.addEventListener("change", function () { S.defM = parseInt(defM.value) || null; });
+    if (defY) defY.addEventListener("change", function () { S.defY = parseInt(defY.value) || null; });
+    var childN = wizBody.querySelector("#childN");
+    if (childN) childN.addEventListener("change", function () { S.children = parseInt(childN.value) || 0; renderStep(); });
+    var docLeave = wizBody.querySelector("#docLeave");
+    if (docLeave) docLeave.addEventListener("change", function () { S.docLeave = Math.max(0, parseInt(docLeave.value) || 0); });
+    var otherM = wizBody.querySelector("#otherM");
+    if (otherM) otherM.addEventListener("change", function () { S.otherMonths = Math.max(0, parseInt(otherM.value) || 0); });
+  }
+
+  function stepValid() {
+    if (stepIndex === 0) {
+      if (!S.phdStatus) return "Choose where your doctorate stands.";
+      if ((S.phdStatus === "done" || S.phdStatus === "submitted") && (!S.defM || !S.defY)) return "Pick the month and year of your defense.";
+      if (S.phdStatus === "done" && !S.certLag) return "Answer the certificate question; it decides which clock the DFG uses.";
+    }
+    if (stepIndex === 1) {
+      if (!S.independence) return "Choose the option closest to your situation.";
+      if (S.postdocYears === null) return "Pick your postdoc experience.";
+      if (!S.clinician) return "Answer the licence question.";
+    }
+    if (stepIndex === 2 && S.children > 0 && !S.role) return "Pick which parental rule applies.";
+    if (stepIndex === 3) {
+      if (!S.education) return "Pick where you were educated.";
+      if (S.education === "abroad" && !S.inGermany3) return "Answer the 3 years in Germany question.";
+      if (!S.base) return "Pick where you are based.";
+      if (!S.goal) return "Pick what you want to fund.";
+    }
+    return null;
+  }
+
+  wizNext.addEventListener("click", function () {
+    var err = stepValid();
+    if (err) { alert(err); return; }
+    if (stepIndex < TOTAL_STEPS - 1) { stepIndex++; renderStep(); }
+    else { showResults(); }
+  });
+  wizBack.addEventListener("click", function () {
+    if (stepIndex > 0) { stepIndex--; renderStep(); verdictsEl.hidden = true; }
+  });
+
+  function monthsBetween(a, b) { return (b.getFullYear() - a.getFullYear()) * 12 + (b.getMonth() - a.getMonth()); }
+  function fmtMonths(m) {
+    if (m < 0) m = 0;
+    var y = Math.floor(m / 12), r = m % 12, parts = [];
+    if (y) parts.push(y + (y === 1 ? " year" : " years"));
+    if (r || !y) parts.push(r + (r === 1 ? " month" : " months"));
+    return parts.join(" and ");
+  }
+
+  function showResults() {
+    var today = new Date();
+    var defense = (S.defM && S.defY) ? new Date(S.defY, S.defM - 1, 15) : null;
+    var out = [];
+
+    /* ----- ERC ----- */
+    (function () {
+      var v = { key: "erc", name: "ERC Starting Grant", status: "cond", reasons: [], links: '<a href="#erc">Read the deep dive</a> · <a href="https://erc.europa.eu/apply-grant/starting-grant" target="_blank" rel="noopener">Official page</a>' };
+      var extM = 0;
+      if (S.children > 0) extM += (S.role === "mother") ? 18 * S.children : Math.min(S.docLeave, 120);
+      extM += Math.min(S.otherMonths, 120);
+      var earliest = new Date(2017, 0, 1);
+      earliest.setMonth(earliest.getMonth() - extM);
+      var deadlinePassed = today > ERC_DEADLINE;
+      if (!defense) {
+        v.status = "cond";
+        v.reasons.push("You have not defended yet. For the 2027 call your defense must happen by 31 December 2026; after that, future calls are expected to return to the usual 2 to 7 year window, so you would enter it once you defend.");
+      } else if (defense > new Date(2026, 11, 31)) {
+        v.status = "closed";
+        v.reasons.push("Your expected defense falls after 31 December 2026, so the 2027 call cannot count it. You enter the eligibility window with the following call.");
+      } else if (defense < earliest) {
+        v.status = "closed";
+        v.reasons.push("Your defense (" + defense.toLocaleDateString("en-GB", { month: "long", year: "numeric" }) + ") sits more than 10 years before 1 January 2027" + (extM ? ", even after your " + fmtMonths(extM) + " of documented extensions" : "") + ". The window for this call is closed.");
+        v.reasons.push("If you have documented interruptions the wizard does not know about (each child, long illness, national service), recount carefully; extensions have no overall cap.");
+      } else {
+        v.status = deadlinePassed ? "cond" : "open";
+        v.reasons.push("Your defense (" + defense.toLocaleDateString("en-GB", { month: "long", year: "numeric" }) + ") falls inside the widened 0 to 10 year window of the 2027 call" + (extM ? ", even before counting your " + fmtMonths(extM) + " of extensions" : "") + ".");
+        if (deadlinePassed) {
+          v.reasons.push("The 14 October 2026 deadline has passed. Watch for the next call; note the usual window is 2 to 7 years, so check your dates against it.");
+        } else {
+          var d = Math.ceil((ERC_DEADLINE - today) / 86400000);
+          v.reasons.push("The deadline is 14 October 2026, " + d + " days away. A competitive proposal takes months, and your host's research office needs lead time for the binding support letter. Start both now or plan for the next call.");
+        }
+        var yearsSince = defense ? (monthsBetween(defense, new Date(2027, 0, 1)) / 12) : null;
+        if (yearsSince !== null && (yearsSince < 2 || yearsSince > 7)) {
+          v.reasons.push("Heads up: under the usual 2 to 7 year rule you would " + (yearsSince < 2 ? "not yet" : "no longer") + " be eligible. This year's widened window is your unusual chance.");
+        }
+      }
+      if (S.base === "outside") v.reasons.push("Because you are based outside the EU and associated countries, you can request up to €2 million on top of the €1.5 million core budget for relocation, up to €3.5 million in total.");
+      if (S.independence === "leader") v.reasons.push("Already leading a group is no obstacle here; the ERC funds established independence too, and your track record carries the application.");
+      out.push(v);
+    })();
+
+    /* ----- Emmy Noether ----- */
+    (function () {
+      var v = { key: "en", name: "DFG Emmy Noether Programme", status: "cond", reasons: [], links: '<a href="#emmy-noether">Read the deep dive</a> · <a href="https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/emmy-noether" target="_blank" rel="noopener">Official page</a>' };
+      if (S.independence === "leader") {
+        v.status = "closed";
+        v.reasons.push("The programme excludes researchers who already lead a comparable independent group or meet professorship requirements. That is you, which is its own kind of good news.");
+      } else if (!defense) {
+        v.status = "cond";
+        v.reasons.push("Your four year window opens with the doctorate, and the DFG expects roughly two years of postdoc experience first. Nothing to do today, but plan the international experience the programme requires.");
+      } else {
+        var extM = 0;
+        if (S.children > 0) extM += Math.min((S.role === "mother" ? 24 : 12) * S.children, 72);
+        var windowM = 48 + (S.clinician === "yes" ? 24 : 0) + extM;
+        var deadline = new Date(defense.getFullYear(), defense.getMonth(), 15);
+        deadline.setMonth(deadline.getMonth() + windowM);
+        var left = monthsBetween(today, deadline);
+        if (S.certLag === "yes") v.reasons.push("Your clock runs from the certificate date, not the defense, since it arrived within a year. The estimate below counts from the defense, so you may have slightly more time than shown.");
+        if (left <= 0) {
+          v.status = "closed";
+          v.reasons.push("Your submission window (" + fmtMonths(windowM) + " from the doctorate" + (extM || S.clinician === "yes" ? ", extensions included" : "") + ") closed around " + deadline.toLocaleDateString("en-GB", { month: "long", year: "numeric" }) + ". If you have documented circumstances the wizard cannot know, ask the DFG head office directly before ruling yourself out.");
+        } else {
+          v.status = "open";
+          v.reasons.push("You have roughly " + fmtMonths(left) + " left to submit: your window is " + fmtMonths(windowM) + " from the doctorate" + (extM || S.clinician === "yes" ? " including your extensions" : "") + ", ending around " + deadline.toLocaleDateString("en-GB", { month: "long", year: "numeric" }) + ".");
+          if (left < 9) v.reasons.push("That is tight. Reviews average about eight months, and a failed first attempt would leave no time for a second. Treat this as a now or never window.");
+          if (S.postdocYears === "0" || S.postdocYears === "1") v.reasons.push("The DFG expects about two years of postdoc experience \"as a rule\" before this grant. Use the time to build the independence record and the required international experience.");
+        }
+        if (S.education === "abroad" && S.inGermany3 !== "yes") v.reasons.push("Applying from abroad is explicitly welcome. You will add a short written confirmation that you intend to continue your career in Germany afterwards.");
+        if (S.postdocYears === "2" || S.postdocYears === "4") v.reasons.push("Remember the separate appendix on substantial international research experience; it is a hard requirement.");
+      }
+      out.push(v);
+    })();
+
+    /* ----- Walter Benjamin ----- */
+    (function () {
+      var v = { key: "wb", name: "DFG Walter Benjamin Programme", status: "cond", reasons: [], links: '<a href="#walter-benjamin">Read the deep dive</a> · <a href="https://www.dfg.de/en/research-funding/funding-opportunities/programmes/individual/walter-benjamin" target="_blank" rel="noopener">Official page</a>' };
+      var wantsAbroad = S.goal === "postdoc-abroad";
+      var integrated = S.education === "germany" || S.inGermany3 === "yes";
+      if (S.independence === "leader") {
+        v.status = "closed";
+        v.reasons.push("The programme is for the early postdoc phase, and the DFG counts people who already run their own group or projects as past it.");
+      } else if (S.phdStatus === "none") {
+        v.status = "cond";
+        v.reasons.push("You can submit the moment your thesis reaches the examinations office, with the thesis, proof of submission, and a supervisor statement attached. Worth preparing in parallel with writing.");
+      } else {
+        if (wantsAbroad) {
+          if (integrated) {
+            v.status = "open";
+            v.reasons.push("For the fellowship abroad you appear to meet the German integration rule (" + (S.education === "germany" ? "education mostly in Germany; note the side conditions: fewer than 3 years abroad since the PhD and at most 1 year already at the chosen host" : "3 continuous years as a researcher in Germany; you submit from Germany") + ").");
+          } else {
+            v.status = "closed";
+            v.reasons.push("The fellowship abroad requires integration into the German research system: mostly German education, or the last 3 years working as a researcher in Germany. From your answers, neither applies. The position in Germany remains fully open to you, and for going abroad look at the Humboldt Fellowship or MSCA instead.");
+          }
+        } else {
+          v.status = "open";
+          v.reasons.push("For the position in Germany there is no nationality requirement and no German connection needed; the DFG checks your career stage, your project, and your chosen host.");
+        }
+        if (S.postdocYears === "4") v.reasons.push("More than four years past the PhD, the \"early postdoc phase\" needs arguing. There is no fixed cutoff, and parental leave counts in your favour, but discuss your case with the DFG contact person before investing months in a proposal.");
+        else if (S.postdocYears === "2") v.reasons.push("You are within the typical range, but the clock on \"early phase\" is soft rather than infinite; sooner is stronger.");
+        v.reasons.push("Mobility matters: the project should move you to a new academic environment, and staying put needs specific justification.");
+        if (S.phdStatus === "submitted") v.reasons.push("You can apply right now, before the defense; funding simply waits until you have passed.");
+      }
+      out.push(v);
+    })();
+
+    /* order by goal relevance */
+    var order = { "postdoc-de": ["wb", "erc", "en"], "postdoc-abroad": ["wb", "erc", "en"], "group": ["en", "erc", "wb"], "all": ["wb", "en", "erc"] };
+    var seq = order[S.goal] || order.all;
+    out.sort(function (a, b) { return seq.indexOf(a.key) - seq.indexOf(b.key); });
+
+    var badge = { open: ["open", "Looks open to you"], cond: ["cond", "Possible, with conditions"], closed: ["closed", "Not this one, for now"] };
+    var h = '<h3 style="font-family:var(--serif);font-size:1.4rem;margin:26px 0 4px">Your reading</h3><p class="fine" style="margin-bottom:14px">Based on the rules as verified on 9 August 2026. This is orientation, not an official assessment.</p>';
+    out.forEach(function (v) {
+      h += '<div class="verdict ' + v.key + '"><h3>' + v.name + '</h3><span class="badge ' + badge[v.status][0] + '">' + badge[v.status][1] + "</span><ul>";
+      v.reasons.forEach(function (r) { h += "<li>" + r + "</li>"; });
+      h += "</ul><p class='v-links'>" + v.links + "</p></div>";
+    });
+    h += '<p class="caveat">The wizard applies the published rules arithmetically. It cannot weigh your science, and borderline cases have human answers: the DFG head office and the ERC national contact points respond to exactly these questions. Rules change; the <a href="#sources">official sources</a> always win.</p>';
+    verdictsEl.innerHTML = h;
+    verdictsEl.hidden = false;
+    verdictsEl.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  }
+
+  renderStep();
+})();
+</script>
+</body>
+</html>
