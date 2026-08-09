@@ -22,8 +22,8 @@ Five things that surprised me:
 
 The guide has an eligibility navigator that applies the rules to your own dates, side by side comparisons, timelines, document checklists, and every single fact linked to its official source at the DFG, the ERC, and EURAXESS Germany.
 
-It is free for study use, and it lives here: [SITE LINK]
-Source and corrections welcome here: [REPO LINK]
+It is free for study use, and it lives here: https://jeelswami.github.io/german-funding-navigator/
+Source and corrections welcome here: https://github.com/JeelSwami/german-funding-navigator
 
 If you know a postdoc wondering whether the German door is open for them: it probably is. Share this with them.
 
@@ -39,6 +39,6 @@ The result is a free interactive guide for international researchers: an eligibi
 
 One time sensitive finding: the ERC Starting Grant 2027 call widened its window to 0 to 10 years after the PhD (usually 2 to 7). Deadline: 14 October 2026. If you thought you had aged out, look again.
 
-Free for study use: [SITE LINK]
+Free for study use: https://jeelswami.github.io/german-funding-navigator/
 
 #ResearchFunding #ERC #DFG #Postdoc #ResearchInGermany
