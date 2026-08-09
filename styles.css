@@ -406,3 +406,65 @@ details.faq .a p { margin-bottom: 10px; }
   .wizard { padding: 20px; }
   .site-nav { display: none; }
 }
+
+/* ---------- redesign: ribbon, path cards, ctas ---------- */
+h1 { text-wrap: balance; }
+
+.ribbon {
+  background: color-mix(in srgb, var(--warn) 11%, var(--bg));
+  border-bottom: 1px solid var(--line);
+  font-size: 0.88rem; color: var(--ink-2);
+}
+.ribbon .wrap {
+  padding-top: 8px; padding-bottom: 8px; line-height: 1.5;
+}
+.ribbon strong { color: var(--ink); }
+
+.cta-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 4px; }
+.btn.big { padding: 13px 26px; font-size: 1.02rem; }
+a.btn { text-decoration: none; display: inline-block; }
+
+.paths {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px; margin-top: 26px;
+}
+.path-card {
+  background: var(--surface); border: 1px solid var(--line);
+  border-top: 3px solid var(--line); border-radius: var(--radius);
+  padding: 22px 24px; display: flex; flex-direction: column; gap: 10px;
+}
+.path-card.wb { border-top-color: var(--wb); }
+.path-card.en { border-top-color: var(--en); }
+.path-card.erc { border-top-color: var(--erc); }
+.path-eyebrow {
+  font-family: var(--mono); font-size: 0.72rem; letter-spacing: 1.2px;
+  text-transform: uppercase; color: var(--muted);
+}
+.path-card h3 { margin: 0; font-size: 1.32rem; }
+.path-card p { color: var(--ink-2); font-size: 0.93rem; margin: 0; }
+.path-stats { display: flex; flex-wrap: wrap; gap: 6px; }
+.stat-pill {
+  font-size: 0.78rem; border: 1px solid var(--line); border-radius: 999px;
+  padding: 3px 10px; color: var(--ink-2); background: var(--surface-2); white-space: nowrap;
+}
+.path-links { margin-top: auto; padding-top: 6px; display: flex; gap: 16px; font-size: 0.9rem; }
+
+.site-nav a.nav-cta { background: var(--ink); color: var(--bg); font-weight: 600; }
+.site-nav a.nav-cta:hover { background: var(--ink); color: var(--bg); opacity: 0.85; }
+
+.wiz-meta {
+  display: flex; gap: 14px; flex-wrap: wrap;
+  font-size: 0.84rem; color: var(--muted); margin: 10px 0 18px;
+}
+.wiz-meta span::before { content: "· "; }
+.wiz-meta span:first-child::before { content: ""; }
+
+@media (max-width: 640px) {
+  .site-nav {
+    display: flex; flex-wrap: nowrap; overflow-x: auto;
+    -webkit-overflow-scrolling: touch; scrollbar-width: none;
+    margin-left: 0; width: 100%;
+  }
+  .site-nav::-webkit-scrollbar { display: none; }
+  .site-nav a { white-space: nowrap; }
+}

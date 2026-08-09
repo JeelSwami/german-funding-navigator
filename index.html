@@ -18,33 +18,53 @@
   <div class="wrap">
     <a class="brand" href="#top">German Funding Navigator<span class="dot">.</span></a>
     <nav class="site-nav" aria-label="Sections">
-      <a href="#navigator">Navigator</a>
+      <a class="nav-cta" href="#navigator">Check eligibility</a>
       <a href="#walter-benjamin">Programmes</a>
       <a href="#compare">Compare</a>
-      <a href="#timelines">Timelines</a>
       <a href="#checklists">Checklists</a>
       <a href="#faq">FAQ</a>
-      <a href="#moving">Moving</a>
-      <a href="#sources">Sources</a>
       <a href="blog.html">Blog</a>
     </nav>
     <button class="theme-btn" id="themeBtn" aria-label="Switch color theme">Theme</button>
   </div>
 </header>
 
+<div class="ribbon" role="note">
+  <div class="wrap"><strong>Open now:</strong> ERC Starting Grant 2027 · this year only, the window is 0 to 10 years after the PhD · deadline 14 October 2026 (<span id="ercCountdown"></span>) · <a href="#erc">what changed</a></div>
+</div>
+
 <main id="top">
 
 <div class="wrap hero">
   <p class="kicker">A guide for international researchers · rules verified 9 August 2026</p>
-  <h1>Three funding routes into German research, mapped.</h1>
-  <p class="lede">Germany funds early career research generously, but the rules are scattered across guideline PDFs, FAQ pages, and portal footnotes. This site pulls them into one place for the three programmes that matter most when you want to run your own project here: the DFG Walter Benjamin Programme, the DFG Emmy Noether Programme, and the ERC Starting Grant. Every fact links back to the official source it came from.</p>
-  <div class="chip-row">
-    <a class="chip" href="#walter-benjamin"><span class="swatch wb"></span>Walter Benjamin · your own postdoc project</a>
-    <a class="chip" href="#emmy-noether"><span class="swatch en"></span>Emmy Noether · your own research group</a>
-    <a class="chip" href="#erc"><span class="swatch erc"></span>ERC Starting Grant · five years, up to €1.5M+</a>
+  <h1>Germany will fund your research.<br>Here is the map.</h1>
+  <p class="lede">Three programmes decide most early research careers here: the DFG Walter Benjamin Programme, the DFG Emmy Noether Programme, and the ERC Starting Grant. This guide turns their guideline PDFs into plain answers, with every fact linked to its official source.</p>
+  <div class="cta-row">
+    <a class="btn primary big" href="#navigator">Check my eligibility · 2 minutes</a>
+    <a class="btn big" href="#compare">Compare the three grants</a>
   </div>
-  <div class="notice urgent" role="note">
-    <div><strong>Time sensitive:</strong> the ERC Starting Grant 2027 call is open now with a widened eligibility window of 0 to 10 years after your PhD defense, instead of the usual 2 to 7. The deadline is <strong>14 October 2026</strong> (<span id="ercCountdown"></span>). If your defense was ever "too long ago" for the ERC, this is the year to look again. <a href="https://erc.europa.eu/news-events/news/changes-2026-and-2027-work-programmes" target="_blank" rel="noopener">Official announcement</a></div>
+  <div class="paths">
+    <div class="path-card wb">
+      <span class="path-eyebrow">DFG Walter Benjamin</span>
+      <h3>Run your own postdoc project</h3>
+      <div class="path-stats"><span class="stat-pill">2 years</span><span class="stat-pill">apply anytime</span><span class="stat-pill">Germany or abroad</span></div>
+      <p>The first grant where the idea is yours. The position in Germany is open to every nationality, no German connection needed.</p>
+      <div class="path-links"><a href="#navigator">Am I eligible?</a><a href="#walter-benjamin">Deep dive</a></div>
+    </div>
+    <div class="path-card en">
+      <span class="path-eyebrow">DFG Emmy Noether</span>
+      <h3>Lead your own research group</h3>
+      <div class="path-stats"><span class="stat-pill">6 years</span><span class="stat-pill">no budget cap</span><span class="stat-pill">in Germany</span></div>
+      <p>The road to a German professorship without habilitation, and it explicitly recruits researchers from abroad.</p>
+      <div class="path-links"><a href="#navigator">Am I eligible?</a><a href="#emmy-noether">Deep dive</a></div>
+    </div>
+    <div class="path-card erc">
+      <span class="path-eyebrow">ERC Starting Grant</span>
+      <h3>Fund a five year idea</h3>
+      <div class="path-stats"><span class="stat-pill">up to €1.5M+</span><span class="stat-pill">deadline 14 Oct 2026</span><span class="stat-pill">EU + associated hosts</span></div>
+      <p>Europe's flagship early career grant, judged on ambition and track record. Germany hosts more of them than anywhere else.</p>
+      <div class="path-links"><a href="#navigator">Am I eligible?</a><a href="#erc">Deep dive</a></div>
+    </div>
   </div>
 </div>
 
@@ -53,11 +73,12 @@
 <!-- ============ NAVIGATOR ============ -->
 <section id="navigator">
   <div class="wrap">
-    <p class="sec-label">01 · Eligibility navigator</p>
+    <p class="sec-label">Eligibility navigator</p>
     <h2>Which programmes are open to you right now?</h2>
-    <p class="sec-intro">Answer a few questions about your PhD, your experience, and your plans. You get an honest reading of where you stand with each programme, based on the current official rules, with the exact rule quoted for anything that affects you. Nothing you enter leaves your browser.</p>
+    <p class="sec-intro">Four short steps about your PhD, your experience, and your plans. You get an honest reading for each programme, with the exact rule behind every conclusion.</p>
 
     <div class="wizard" id="wizard" aria-live="polite">
+      <div class="wiz-meta"><span>4 steps</span><span>about 2 minutes</span><span>nothing you enter leaves your browser</span></div>
       <div class="wiz-progress" id="wizProgress" aria-hidden="true"></div>
       <div id="wizBody"><!-- steps rendered by script --></div>
       <div class="wiz-nav">
@@ -74,7 +95,7 @@
 <!-- ============ DEEP DIVES ============ -->
 <section id="walter-benjamin">
   <div class="wrap">
-    <p class="sec-label">02 · The programmes in depth</p>
+    <p class="sec-label">The programmes in depth</p>
 
     <div class="card prog-card wb">
       <h2>DFG Walter Benjamin Programme</h2>
@@ -210,7 +231,7 @@
 <!-- ============ COMPARE ============ -->
 <section id="compare">
   <div class="wrap">
-    <p class="sec-label">03 · Side by side</p>
+    <p class="sec-label">Side by side</p>
     <h2>The three programmes at a glance</h2>
     <p class="sec-intro">Same table, no marketing. Where a number depends on a date or a call year, the note underneath says so.</p>
     <div class="table-scroll" role="region" aria-label="Programme comparison table" tabindex="0">
@@ -308,7 +329,7 @@
 <!-- ============ TIMELINES ============ -->
 <section id="timelines">
   <div class="wrap">
-    <p class="sec-label">04 · The two clocks that decide everything</p>
+    <p class="sec-label">The two clocks that decide everything</p>
     <h2>Your eligibility window, and how long the wait really is</h2>
     <p class="sec-intro">Grant eligibility is measured in "academic age": years since your PhD. Beware that the funders use different clocks. The ERC counts from your defense; the DFG counts from your certificate if it arrived within a year of the defense, otherwise from the defense itself.</p>
 
@@ -389,7 +410,7 @@
 <!-- ============ CHECKLISTS ============ -->
 <section id="checklists">
   <div class="wrap">
-    <p class="sec-label">05 · Checklists</p>
+    <p class="sec-label">Checklists</p>
     <h2>What each application actually requires</h2>
     <p class="sec-intro">Compiled from the official guidelines and proposal instructions. Your ticks are saved in your browser, so you can come back as you work through them.</p>
 
@@ -459,7 +480,7 @@
 <!-- ============ FAQ ============ -->
 <section id="faq">
   <div class="wrap">
-    <p class="sec-label">06 · Questions researchers actually ask</p>
+    <p class="sec-label">Questions researchers actually ask</p>
     <h2>Honest answers, with receipts</h2>
     <p class="sec-intro">Collected from the official DFG and ERC FAQ pages and from the questions international researchers keep asking on forums like Academia Stack Exchange. Every answer links to where it comes from.</p>
 
@@ -566,7 +587,7 @@
 <!-- ============ MOVING ============ -->
 <section id="moving">
   <div class="wrap">
-    <p class="sec-label">07 · The move itself</p>
+    <p class="sec-label">The move itself</p>
     <h2>Visas, insurance, and the fine print of arriving</h2>
     <p class="sec-intro">The grant is only half the move. These are the rules that shape your first year in Germany, from official sources, mainly EURAXESS Germany.</p>
 
@@ -602,7 +623,7 @@
 <!-- ============ ALTERNATIVES ============ -->
 <section id="alternatives">
   <div class="wrap">
-    <p class="sec-label">08 · If none of the three fits today</p>
+    <p class="sec-label">If none of the three fits today</p>
     <h2>Adjacent routes worth knowing</h2>
     <p class="sec-intro">Honest one liners, because the right programme is sometimes someone else's.</p>
     <div class="alt-grid">
@@ -640,7 +661,7 @@
 <!-- ============ BLOG TEASER ============ -->
 <section id="blog-teaser">
   <div class="wrap">
-    <p class="sec-label">09 · The essay</p>
+    <p class="sec-label">The essay</p>
     <div class="card">
       <h2 style="margin-bottom:6px">A physicist's map of German funding</h2>
       <p class="sec-intro" style="margin-bottom:14px">Why the same three programmes keep deciding research careers in Germany, what actually separates them, and the five things I wish someone had told me before I started reading guideline PDFs. The story behind this site, in about six minutes.</p>
@@ -654,7 +675,7 @@
 <!-- ============ SOURCES ============ -->
 <section id="sources" class="sources">
   <div class="wrap">
-    <p class="sec-label">10 · Sources and acknowledgements</p>
+    <p class="sec-label">Sources and acknowledgements</p>
     <h2>Where every fact comes from</h2>
     <p class="sec-intro">All programme information on this site was compiled from the official public sources below, accessed on 9 August 2026. The facts belong to their publishers; this site only organizes them. Rules change, and the official pages always win over anything written here. If you spot an error, please <a href="https://github.com/JeelSwami/german-funding-navigator/issues" target="_blank" rel="noopener">open an issue</a>.</p>
 
@@ -1083,7 +1104,13 @@
       h += "</ul><p class='v-links'>" + v.links + "</p></div>";
     });
     h += '<p class="caveat">The wizard applies the published rules arithmetically. It cannot weigh your science, and borderline cases have human answers: the DFG head office and the ERC national contact points respond to exactly these questions. Rules change; the <a href="#sources">official sources</a> always win.</p>';
+    h += '<p style="margin-top:14px"><button class="btn" id="wizAdjust" type="button">Adjust my answers</button></p>';
     verdictsEl.innerHTML = h;
+    var adj = document.getElementById("wizAdjust");
+    if (adj) adj.addEventListener("click", function () {
+      stepIndex = 0; verdictsEl.hidden = true; renderStep();
+      document.getElementById("wizard").scrollIntoView({ behavior: "smooth", block: "start" });
+    });
     verdictsEl.hidden = false;
     verdictsEl.scrollIntoView({ behavior: "smooth", block: "nearest" });
   }
