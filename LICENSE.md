@@ -12,7 +12,7 @@ You are welcome to use this website and repository freely for study, learning, t
 
 ## What you may not do
 
-Commercial use is not permitted. You may not sell this work, bundle it into a paid product or service, or use it in consulting deliverables without written permission from Jeel Swami (jeelswamis@gmail.com).
+Commercial use is not permitted. You may not sell this work, bundle it into a paid product or service, or use it in consulting deliverables without written permission from Jeel Swami (ask via a [GitHub issue](https://github.com/JeelSwami/german-funding-navigator/issues)).
 
 If you want to republish the compiled content, tables, checklists, or decision logic anywhere else, in any form, please ask for permission first.
 
