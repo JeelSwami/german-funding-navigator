@@ -24,6 +24,10 @@ Built by [Jeel Swami](https://github.com/JeelSwami), a physicist mapping the Ger
 
 All programme facts come from official public sources, credited in full on the site: the Deutsche Forschungsgemeinschaft (DFG), the European Research Council (ERC), the EU Funding and Tenders Portal, and EURAXESS Germany, among others. This is an independent educational project and is not affiliated with or endorsed by any of these organizations. Rules change, so always verify against the official pages before applying.
 
+## Independence
+
+This is a personal, educational project by Jeel Swami. It is not affiliated with, endorsed by, or commissioned by the DFG, the ERC, the European Commission, or any other organization named here. Programme rules change; always confirm details on the official pages before you apply.
+
 ## License
 
 Free for study and educational use. Not for commercial use. See [LICENSE.md](LICENSE.md).
