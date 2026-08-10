@@ -12,13 +12,13 @@ An interactive guide for international researchers who want to build a research 
 - **Deep dives**: what each programme funds, who can apply, how much, how long, and how the decision process works
 - **Timelines**: how long each application really takes, from first draft to funded start
 - **Checklists**: the documents and commitments each application needs
-- **Honest answers**: the questions international researchers actually ask, answered from official sources
+- **Straight answers**: the questions international researchers actually ask, answered from official sources
 
 ## Why it exists
 
 Germany funds research generously, but the system is hard to read from the outside. Programme pages assume you already know how German academia works. This project pulls the official rules into one place, organized around the questions a researcher abroad actually has: am I eligible, from my country, with my PhD date, and what happens next.
 
-Built by [Jeel Swami](https://github.com/JeelSwami), a physicist mapping the German research funding landscape.
+Built by [Jeel Swami](https://github.com/JeelSwami), a physicist mapping the German research funding system.
 
 ## Sources and credits
 

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact and legal · German Funding Navigator</title>
+<meta name="description" content="Who runs the German Funding Navigator, how to reach them, and what happens with your data (short answer: nothing).">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%231baf7a'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='Georgia'%3EN%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html">German Funding Navigator<span class="dot">.</span></a>
+    <nav class="site-nav" aria-label="Sections">
+      <a href="index.html#navigator">Navigator</a>
+      <a href="index.html#sources">Sources</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+    <button class="theme-btn" id="themeBtn" aria-label="Switch color theme">Theme</button>
+  </div>
+</header>
+
+<article class="article">
+  <p class="kicker">Contact and legal</p>
+  <h1>The formal page</h1>
+
+  <h2>Who runs this site</h2>
+  <p>The German Funding Navigator is a free, non commercial educational project by <strong>Jeel Swami</strong>, a private individual. You can reach me by email at <a href="mailto:jeel.swami@outlook.com">jeel.swami@outlook.com</a> or through <a href="https://github.com/JeelSwami/german-funding-navigator/issues" target="_blank" rel="noopener">GitHub issues</a>, which is also the best place for corrections.</p>
+  <p>This site is not affiliated with, and not endorsed by, the Deutsche Forschungsgemeinschaft, the European Research Council, the European Commission, EURAXESS, or any other organization named on it. It summarizes their public rules for educational purposes and links to every source. It is general information, not legal advice and not an official assessment; funding decisions rest entirely with the funders.</p>
+
+  <h2>Privacy</h2>
+  <p>The honest summary: this site collects nothing about you, and nothing you enter ever reaches me.</p>
+  <ul>
+    <li><strong>Hosting.</strong> The site is served by GitHub Pages, a service of GitHub, Inc. (USA). When you visit, GitHub logs your IP address and technical access data for security purposes, as described in the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noopener">GitHub Privacy Statement</a>. The legal basis is the legitimate interest in delivering the site securely (Art. 6(1)(f) GDPR); GitHub applies the recognized safeguards for transfers to the USA.</li>
+    <li><strong>No tracking.</strong> No cookies, no analytics, no ads, no user accounts, no forms that send data anywhere.</li>
+    <li><strong>The eligibility navigator</strong> runs entirely in your browser. Your answers are processed locally and never transmitted.</li>
+    <li><strong>Local storage.</strong> Your checklist ticks and theme choice are saved in your browser's local storage because you set them. That storage is strictly necessary for a feature you explicitly use (Section 25(2) No. 2 TDDDG), stays on your device, and disappears when you clear your browser data.</li>
+    <li><strong>Your rights.</strong> The GDPR gives you rights of access, rectification, erasure, restriction, objection, and complaint to a supervisory authority. Since this site holds no data about you, questions about the hosting logs are best directed to GitHub via its privacy statement.</li>
+  </ul>
+
+  <h2>Content reuse and credits</h2>
+  <p>European Commission and ERC content is reused under the Commission's reuse policy (CC BY 4.0, © European Union), summarized and reworded with changes indicated. DFG materials are cited under the DFG's stated permission to redistribute excerpts for educational and scientific purposes with attribution. The full reference list with access dates is in the <a href="index.html#sources">acknowledgements and references</a> section. This project's own text and code are licensed for study use only; see the <a href="https://github.com/JeelSwami/german-funding-navigator/blob/main/LICENSE.md" target="_blank" rel="noopener">license</a>.</p>
+</article>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p><strong>German Funding Navigator</strong> · built and maintained by Jeel Swami · <a href="index.html">back to the navigator</a></p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var themeBtn = document.getElementById("themeBtn");
+  function applyTheme(mode) {
+    if (mode === "light" || mode === "dark") document.documentElement.setAttribute("data-theme", mode);
+    else document.documentElement.removeAttribute("data-theme");
+    themeBtn.textContent = mode === "light" ? "Light" : mode === "dark" ? "Dark" : "Auto";
+  }
+  var saved = null;
+  try { saved = localStorage.getItem("gfn-theme"); } catch (e) {}
+  applyTheme(saved || "auto");
+  themeBtn.addEventListener("click", function () {
+    var cur = themeBtn.textContent.toLowerCase();
+    var next = cur === "auto" ? "light" : cur === "light" ? "dark" : "auto";
+    try { localStorage.setItem("gfn-theme", next); } catch (e) {}
+    applyTheme(next);
+  });
+})();
+</script>
+</body>
+</html>
